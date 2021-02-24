@@ -13,6 +13,12 @@ public class Cluster implements IdGettable{
     private double goal;
     private ArrayList<User> users;
 
+    public ArrayList<User> getUsers() {
+        return users;
+    }
+
+    public double getGoal() { return goal; }
+
     public Cluster(String clusterName, int participantCounter, double goal, ArrayList<User> users) {
         clusterId=getId();
         this.clusterName = clusterName;
