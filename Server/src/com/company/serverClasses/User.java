@@ -42,6 +42,8 @@ public class User implements IdGettable {
 
     public double getBalance() { return balance; }
 
+    public void setBalance(double balance) { this.balance = balance; }
+
     public User(String name, String surname, Date birthDate, String email, String telephoneNumber, String password, double balance) {
         memberId=getId();
         if (name.isEmpty()||name==null){
