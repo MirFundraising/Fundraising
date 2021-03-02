@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "815226285564",
+    "project_id": "fundraising-mir",
+    "storage_bucket": "fundraising-mir.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815226285564:android:f9c083951111c6e2d2d679",
+        "android_client_info": {
+          "package_name": "com.mir.mirandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815226285564-5871j2pe8ohaj0oicg4qdc0c4b3e2jv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxmAqsxuAneqVokJoIpmB4lz8p8HuW9F4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815226285564-5871j2pe8ohaj0oicg4qdc0c4b3e2jv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
