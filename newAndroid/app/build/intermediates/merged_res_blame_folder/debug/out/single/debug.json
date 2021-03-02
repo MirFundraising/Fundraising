@@ -1,21 +1,5 @@
 [
     {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wave3.xml.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_wave3.xml"
-    },
-    {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
@@ -28,24 +12,12 @@
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_wave.xml"
     },
     {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_cluster_list.xml.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\fragment_cluster_list.xml"
-    },
-    {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_add_24.xml.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_add_24.xml"
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_white_text_on_main_background.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\white_text_on_main_background.xml"
     },
     {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_move_to_inbox_24.xml.flat",
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_move_to_inbox_24.xml"
-    },
-    {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wave_main.xml.flat",
@@ -60,32 +32,12 @@
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_email_24.xml.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_email_24.xml"
-    },
-    {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_nav_menu.xml.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
-    },
-    {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_home_24.xml.flat",
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_home_24.xml"
-    },
-    {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wave2.xml.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_wave2.xml"
     },
     {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_date_range_24.xml.flat",
@@ -108,6 +60,86 @@
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\round_text_borders.xml"
     },
     {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_home_background.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\gradient_home_background.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_phone_24.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_phone_24.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_borders.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\round_borders.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_home.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_home.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_new_cluster.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\activity_add_new_cluster.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wave3.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_wave3.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_add_24.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_add_24.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_cluster_list.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\fragment_cluster_list.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_email_24.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_email_24.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wave2.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_wave2.xml"
+    },
+    {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wave4.xml.flat",
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_wave4.xml"
     },
@@ -124,28 +156,12 @@
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_home_background.xml.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\gradient_home_background.xml"
-    },
-    {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_cluster_row.xml.flat",
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\cluster_row.xml"
     },
     {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_borders.xml.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\round_borders.xml"
-    },
-    {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_home.xml.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_home.xml"
     },
     {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_auth_mir.jpg.flat",
@@ -170,10 +186,6 @@
     {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_notifications_black_24dp.xml.flat",

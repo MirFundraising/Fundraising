@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MirAnd" >
+        <activity android:name="com.example.mirand.add_new_cluster" />
         <activity android:name="com.example.mirand.ui.intro.activity_welcome" />
         <activity android:name="com.example.mirand.ui.intro.activity_register" />
         <activity android:name="com.example.mirand.ui.intro.activity_login" />

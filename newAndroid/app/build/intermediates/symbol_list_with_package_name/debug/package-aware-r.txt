@@ -1397,6 +1397,7 @@ drawable ic_baseline_home
 drawable ic_baseline_home_24
 drawable ic_baseline_move_to_inbox_24
 drawable ic_baseline_person_24
+drawable ic_baseline_phone_24
 drawable ic_baseline_phone_android_24
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
@@ -1447,6 +1448,7 @@ drawable round_text_borders
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable white_text_on_main_background
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1562,8 +1564,8 @@ id dimensions
 id direct
 id disableHome
 id dropdown_menu
-id editTextTextEmailAddress
 id edit_query
+id email_text
 id end
 id enterAlways
 id enterAlwaysCollapsed
@@ -1743,6 +1745,10 @@ id textView10
 id textView12
 id textView2
 id textView3
+id textView5
+id textView6
+id textView7
+id textView8
 id text_input_end_icon
 id text_input_start_icon
 id text_notifications
@@ -1752,6 +1758,7 @@ id textinput_helper_text
 id time
 id title
 id titleDividerNoCustom
+id title_create_new_cluster_text
 id title_template
 id top
 id topPanel
@@ -1771,6 +1778,8 @@ id useLogo
 id user_name
 id user_permission_text
 id user_surname
+id view
+id view2
 id view_offset_helper
 id visible
 id visible_removing_fragment_view_tag
@@ -1839,6 +1848,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add_new_cluster
 layout activity_login
 layout activity_main
 layout activity_register
