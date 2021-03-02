@@ -11,6 +11,7 @@ public class User implements IdGettable {
     private Date birthDate;//дата рождения
     private String email;//email
     private String telephoneNumber;//телефонный номер
+    private double balance;// баланс пользователя
     private String password;
     private ArrayList<Cluster> clusters;
     private HashMap<Long,Permission> userPermissionOnClusterId;
@@ -39,7 +40,11 @@ public class User implements IdGettable {
         return telephoneNumber;
     }
 
-    public User(String name, String surname, Date birthDate, String email, String telephoneNumber, String password) {
+    public double getBalance() { return balance; }
+
+    public void setBalance(double balance) { this.balance = balance; }
+
+    public User(String name, String surname, Date birthDate, String email, String telephoneNumber, String password, double balance) {
         memberId=getId();
         if (name.isEmpty()||name==null){
 
@@ -50,6 +55,7 @@ public class User implements IdGettable {
         this.email = email;
         this.telephoneNumber = telephoneNumber;
         this.password=password;
+        this.balance = balance;
     }
 
     @Override
