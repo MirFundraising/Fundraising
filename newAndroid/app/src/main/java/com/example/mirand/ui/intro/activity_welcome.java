@@ -17,10 +17,8 @@ public class activity_welcome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
         continueButton=(Button)findViewById(R.id.enter_button);
-        continueButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-            }
+        continueButton.setOnClickListener(view -> {
+            startActivity(new Intent(activity_welcome.this,activity_login.class));
         });
     }
 }
