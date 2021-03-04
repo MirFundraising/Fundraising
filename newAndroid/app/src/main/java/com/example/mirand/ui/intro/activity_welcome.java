@@ -19,6 +19,7 @@ public class activity_welcome extends AppCompatActivity {
         continueButton=(Button)findViewById(R.id.enter_button);
         continueButton.setOnClickListener(view -> {
             startActivity(new Intent(activity_welcome.this,activity_login.class));
+
         });
     }
 }
