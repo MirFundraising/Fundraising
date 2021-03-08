@@ -97,4 +97,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/end_of_date_new_cluster" />
 
+    <Button
+        android:id="@+id/create_new_cluster_button"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/round_borders"
+        android:backgroundTint="@color/main_green"
+        android:text="Создать кластер"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_date" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
