@@ -1,4 +1,4 @@
-#Wed Mar 03 00:05:40 MSK 2021
+#Mon Mar 08 17:15:06 MSK 2021
 base.0=C\:\\MirProject\\newAndroid\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

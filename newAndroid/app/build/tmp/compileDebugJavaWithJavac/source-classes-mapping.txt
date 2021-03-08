@@ -7,6 +7,10 @@ com/example/mirand/adapters/MyRecyclerViewAdapter.java
  com.example.mirand.adapters.MyRecyclerViewAdapter$MyViewHolder
 com/example/mirand/ui/intro/activity_login.java
  com.example.mirand.ui.intro.activity_login
+ com.example.mirand.ui.intro.activity_login$1
+ com.example.mirand.ui.intro.activity_login$2
+ com.example.mirand.ui.intro.activity_login$2$1
+ com.example.mirand.ui.intro.activity_login$3
 com/example/mirand/add_new_cluster.java
  com.example.mirand.add_new_cluster
 com/example/mirand/ui/intro/activity_register.java
@@ -16,6 +20,7 @@ com/example/mirand/ui/notifications/NotificationsFragment.java
  com.example.mirand.ui.notifications.NotificationsFragment$1
 com/example/mirand/ui/intro/activity_welcome.java
  com.example.mirand.ui.intro.activity_welcome
+ com.example.mirand.ui.intro.activity_welcome$1
 com/example/mirand/MainActivity.java
  com.example.mirand.MainActivity
 com/example/mirand/ui/home/HomeViewModel.java
