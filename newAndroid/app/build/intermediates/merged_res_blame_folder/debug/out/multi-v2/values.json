@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\tigra\\Desktop\\Fundraising\\newAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\tigra\\Desktop\\test\\Fundraising\\newAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tigra\\.gradle\\caches\\transforms-2\\files-2.1\\d7f60efe91dc50766e89efcb1d143ec0\\constraintlayout-1.1.3\\res\\values\\values.xml",
@@ -76,6 +76,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\tigra\\Desktop\\test\\Fundraising\\newAndroid\\app\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "90,149",
+                        "endColumns": "57,55",
+                        "endOffsets": "143,200"
+                    },
+                    "to": {
+                        "startLines": "426,427",
+                        "startColumns": "4,4",
+                        "startOffsets": "25213,25271",
+                        "endColumns": "57,55",
+                        "endOffsets": "25266,25322"
+                    }
+                },
+                {
                     "source": "C:\\Users\\tigra\\.gradle\\caches\\transforms-2\\files-2.1\\9ce2377872cf5bf4656e8a9e15cb45b5\\navigation-common-2.2.2\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,13,19,23,26",
@@ -128,6 +145,23 @@
                         "endLines": "181,488,489,490,498,499,500,718,6510",
                         "endColumns": "55,58,47,55,74,75,71,65,24",
                         "endOffsets": "9005,29287,29335,29391,30077,30153,30225,44194,413111"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\tigra\\Desktop\\test\\Fundraising\\newAndroid\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,281,385,494,614,713",
+                        "endColumns": "143,81,103,108,119,98,75",
+                        "endOffsets": "194,276,380,489,609,708,784"
+                    },
+                    "to": {
+                        "startLines": "836,841,842,843,844,845,889",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "52748,53360,53442,53546,53655,53775,61317",
+                        "endColumns": "143,81,103,108,119,98,75",
+                        "endOffsets": "52887,53437,53541,53650,53770,53869,61388"
                     }
                 },
                 {
@@ -188,23 +222,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tigra\\Desktop\\Fundraising\\newAndroid\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1,3,2,4",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "17,107,62,158",
-                        "endColumns": "43,49,43,61",
-                        "endOffsets": "56,152,101,215"
-                    },
-                    "to": {
-                        "startLines": "810,892,893,894",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "49663,61517,61567,61611",
-                        "endColumns": "43,49,43,61",
-                        "endOffsets": "49702,61562,61606,61668"
-                    }
-                },
-                {
                     "source": "C:\\Users\\tigra\\.gradle\\caches\\transforms-2\\files-2.1\\77c1656fd6659de665ea29268968dea6\\fragment-1.2.4\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,9",
@@ -221,23 +238,6 @@
                         "endLines": "714,755,5920,5924",
                         "endColumns": "56,63,24,24",
                         "endOffsets": "44007,46038,383622,383771"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\tigra\\Desktop\\Fundraising\\newAndroid\\app\\src\\main\\res\\values\\dimens.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "90,149",
-                        "endColumns": "57,55",
-                        "endOffsets": "143,200"
-                    },
-                    "to": {
-                        "startLines": "426,427",
-                        "startColumns": "4,4",
-                        "startOffsets": "25213,25271",
-                        "endColumns": "57,55",
-                        "endOffsets": "25266,25322"
                     }
                 },
                 {
@@ -298,6 +298,40 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\tigra\\Desktop\\test\\Fundraising\\newAndroid\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "11,7,12,14,10,9,2,3,4,13,15,5,6,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "470,293,511,597,425,379,57,105,153,555,637,201,247,336",
+                        "endColumns": "39,41,42,38,43,44,46,46,46,40,45,44,44,41",
+                        "endOffsets": "505,330,549,631,464,419,99,147,195,591,678,241,287,373"
+                    },
+                    "to": {
+                        "startLines": "226,227,291,294,295,296,327,328,329,330,337,342,343,346",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "11801,11841,16413,16591,16630,16674,18676,18723,18770,18817,19269,19601,19646,19812",
+                        "endColumns": "39,41,42,38,43,44,46,46,46,40,45,44,44,41",
+                        "endOffsets": "11836,11878,16451,16625,16669,16714,18718,18765,18812,18853,19310,19641,19686,19849"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\tigra\\Desktop\\test\\Fundraising\\newAndroid\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1,3,2,4",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "17,107,62,158",
+                        "endColumns": "43,49,43,61",
+                        "endOffsets": "56,152,101,215"
+                    },
+                    "to": {
+                        "startLines": "810,892,893,894",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "49663,61517,61567,61611",
+                        "endColumns": "43,49,43,61",
+                        "endOffsets": "49702,61562,61606,61668"
+                    }
+                },
+                {
                     "source": "C:\\Users\\tigra\\.gradle\\caches\\transforms-2\\files-2.1\\c12c67ce0bfe447c30260a3352c8807c\\navigation-fragment-2.2.2\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,6,9",
@@ -314,23 +348,6 @@
                         "endLines": "725,5745,5927,6410",
                         "endColumns": "56,24,24,24",
                         "endOffsets": "44550,373544,383881,407268"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\tigra\\Desktop\\Fundraising\\newAndroid\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "11,7,12,14,10,9,2,3,4,13,15,5,6,8",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "470,293,511,597,425,379,57,105,153,555,637,201,247,336",
-                        "endColumns": "39,41,42,38,43,44,46,46,46,40,45,44,44,41",
-                        "endOffsets": "505,330,549,631,464,419,99,147,195,591,678,241,287,373"
-                    },
-                    "to": {
-                        "startLines": "226,227,291,294,295,296,327,328,329,330,337,342,343,346",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "11801,11841,16413,16591,16630,16674,18676,18723,18770,18817,19269,19601,19646,19812",
-                        "endColumns": "39,41,42,38,43,44,46,46,46,40,45,44,44,41",
-                        "endOffsets": "11836,11878,16451,16625,16669,16714,18718,18765,18812,18853,19310,19641,19686,19849"
                     }
                 },
                 {
@@ -353,23 +370,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tigra\\Desktop\\Fundraising\\newAndroid\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,281,385,494,614,713",
-                        "endColumns": "143,81,103,108,119,98,75",
-                        "endOffsets": "194,276,380,489,609,708,784"
-                    },
-                    "to": {
-                        "startLines": "836,841,842,843,844,845,889",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "52748,53360,53442,53546,53655,53775,61317",
-                        "endColumns": "143,81,103,108,119,98,75",
-                        "endOffsets": "52887,53437,53541,53650,53770,53869,61388"
-                    }
-                },
-                {
                     "source": "C:\\Users\\tigra\\.gradle\\caches\\transforms-2\\files-2.1\\66ef0829778507409ceeca3a8f07c4d0\\navigation-runtime-2.2.2\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,10,13",
@@ -389,7 +389,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\tigra\\Desktop\\Fundraising\\newAndroid\\app\\src\\main\\res\\values\\themes.xml",
+                    "source": "C:\\Users\\tigra\\Desktop\\test\\Fundraising\\newAndroid\\app\\src\\main\\res\\values\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

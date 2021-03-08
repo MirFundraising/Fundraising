@@ -10,15 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MirAnd">
         <activity android:name=".add_new_cluster"></activity>
-        <activity android:name=".ui.intro.activity_welcome" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".ui.intro.activity_register" />
         <activity android:name=".ui.intro.activity_login" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.intro.activity_welcome"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

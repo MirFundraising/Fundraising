@@ -1566,6 +1566,7 @@ id bottom
 id bottom_wave
 id buttonPanel
 id cancel_button
+id cant_auth_login_text
 id center
 id center_horizontal
 id center_vertical
@@ -1574,6 +1575,8 @@ id checkbox
 id checked
 id chip
 id chip_group
+id choose_date
+id choose_time
 id chronometer
 id clear_text
 id clip_horizontal
@@ -1608,6 +1611,7 @@ id dropdown_menu
 id edit_query
 id email_text
 id end
+id end_of_date_new_cluster
 id enterAlways
 id enterAlwaysCollapsed
 id enter_button
@@ -1627,6 +1631,7 @@ id forever
 id fragment_container_view_tag
 id ghost_view
 id ghost_view_holder
+id go_to_register_text
 id gone
 id group_divider
 id groups
@@ -1693,6 +1698,7 @@ id navigation_home
 id navigation_notifications
 id never
 id new_cluster_layout
+id new_cluster_user_phone_text
 id noScroll
 id none
 id normal
@@ -1710,7 +1716,6 @@ id parent_matrix
 id password_toggle
 id peekHeight
 id percent
-id phone_number_text
 id pin
 id progress_circular
 id progress_horizontal
@@ -1788,10 +1793,6 @@ id textView10
 id textView12
 id textView2
 id textView3
-id textView5
-id textView6
-id textView7
-id textView8
 id text_input_end_icon
 id text_input_start_icon
 id text_notifications

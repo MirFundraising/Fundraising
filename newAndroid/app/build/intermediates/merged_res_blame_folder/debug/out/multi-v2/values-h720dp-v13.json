@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\tigra\\Desktop\\Fundraising\\newAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "outputFile": "C:\\Users\\tigra\\Desktop\\test\\Fundraising\\newAndroid\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\tigra\\.gradle\\caches\\transforms-2\\files-2.1\\655dc37091b53a1d451eef0026f359d4\\appcompat-1.1.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
