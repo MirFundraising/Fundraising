@@ -40,8 +40,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView5"
+    <EditText
+        android:id="@+id/new_cluster_user_phone_text"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -56,8 +56,8 @@
         app:layout_constraintStart_toEndOf="@+id/view2"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
-    <TextView
-        android:id="@+id/textView6"
+    <EditText
+        android:id="@+id/end_of_date_new_cluster"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -69,10 +69,10 @@
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/new_cluster_user_phone_text" />
 
-    <TextView
-        android:id="@+id/textView7"
+    <EditText
+        android:id="@+id/choose_date"
         android:layout_width="190dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -82,12 +82,12 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/end_of_date_new_cluster" />
 
-    <TextView
-        android:id="@+id/textView8"
+    <EditText
+        android:id="@+id/choose_time"
         android:layout_width="196dp"
-        android:layout_height="43dp"
+        android:layout_height="45dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/round_borders"
@@ -95,6 +95,6 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/end_of_date_new_cluster" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

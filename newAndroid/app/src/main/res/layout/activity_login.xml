@@ -27,7 +27,7 @@
     <View
         android:id="@+id/wave_view"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:background="@drawable/ic_wave2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -86,10 +86,8 @@
         android:layout_width="248dp"
         android:layout_height="55dp"
         android:layout_marginStart="81dp"
-        android:layout_marginLeft="81dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="82dp"
-        android:layout_marginRight="82dp"
         android:background="@drawable/round_borders"
         android:drawableStart="@drawable/ic_baseline_move_to_inbox_24"
         android:ems="10"
@@ -116,5 +114,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sms_code_text" />
+
+    <TextView
+        android:id="@+id/cant_auth_login_text"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="не удалось авторизоваться"
+        android:textColor="@color/red_ok"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_main_app_button" />
+
+    <TextView
+        android:id="@+id/go_to_register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Еще нет аккаунта? Нажмите здесь!"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/bottom_wave"
+        app:layout_constraintStart_toStartOf="@+id/bottom_wave"
+        app:layout_constraintTop_toBottomOf="@+id/cant_auth_login_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

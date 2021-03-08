@@ -1605,8 +1605,8 @@ id dimensions
 id direct
 id disableHome
 id dropdown_menu
-id editTextTextEmailAddress
 id edit_query
+id email_text
 id end
 id enterAlways
 id enterAlwaysCollapsed

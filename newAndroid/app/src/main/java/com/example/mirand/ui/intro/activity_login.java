@@ -4,12 +4,19 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+<<<<<<< HEAD
 import android.net.Uri;
+=======
+>>>>>>> bea3c611d16272ea48a6d5c9af7ad5711647270e
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+<<<<<<< HEAD
 import android.widget.Toast;
+=======
+import android.widget.TextView;
+>>>>>>> bea3c611d16272ea48a6d5c9af7ad5711647270e
 
 import com.example.mirand.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -25,6 +32,7 @@ import com.google.firebase.auth.PhoneAuthProvider;
 import java.util.concurrent.TimeUnit;
 
 public class activity_login extends AppCompatActivity {
+<<<<<<< HEAD
 
     private Button mSendCode;
     private Button mLogIn;
@@ -34,10 +42,16 @@ public class activity_login extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
 
+=======
+    private EditText phone, code;
+    private TextView cannotAuth,registerSwitch;
+    private Button sendCode,enter;
+>>>>>>> bea3c611d16272ea48a6d5c9af7ad5711647270e
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+<<<<<<< HEAD
 
         mSendCode = findViewById(R.id.send_code);
         mLogIn = findViewById(R.id.enter_main_app_button);
@@ -119,6 +133,33 @@ public class activity_login extends AppCompatActivity {
                 toast.show();
             }
         };
+=======
+        phone=(EditText) findViewById(R.id.send_to_this_phone_text);//поле телефона
+        code=(EditText) findViewById(R.id.sms_code_text);//поле ввода кода
+        sendCode=(Button)findViewById(R.id.send_code);//кнопка отправки кода
+        enter=(Button)findViewById(R.id.enter_main_app_button);//поле входа
+        cannotAuth=(TextView)findViewById(R.id.cant_auth_login_text);//если не удалось войти
+        cannotAuth.setVisibility(View.INVISIBLE);
+        registerSwitch=(TextView)findViewById(R.id.go_to_register_text);
+
+        registerSwitch.setOnClickListener(view -> {
+            startActivity(new Intent(activity_login.this,activity_register.class));
+        });
+        sendCode.setOnClickListener(view -> {
+            if (phone.getText().toString().startsWith("+7")||phone.getText().toString().startsWith("8")
+                    &&phone.getText().toString().length()>10&&phone.getText().toString().length()<13){
+                //todo отправить код фаербейсом
+            }
+            else cannotAuth.setVisibility(View.VISIBLE);
+        });
+
+
+        enter.setOnClickListener(view -> {
+            if (!code.getText().toString().isEmpty()){
+                //todo если код верен, то войти в прогу под своим аккаунтом (надо получить данные юзера, мб)
+            }
+        });
+>>>>>>> bea3c611d16272ea48a6d5c9af7ad5711647270e
     }
 
 //    @Override
