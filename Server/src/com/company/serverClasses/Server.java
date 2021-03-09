@@ -6,6 +6,7 @@ import java.net.DatagramSocket;
 import java.net.SocketException;
 
 public class Server {
+
     private int port;
     private DatagramSocket socket;
     private Thread serverRun, manage, receive;

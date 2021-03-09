@@ -9,7 +9,6 @@ public class ServerMain {
         new Server(port);
     }
 
-
     public static void main(String[] args) {
         int port;
         if (args.length != 1) {
