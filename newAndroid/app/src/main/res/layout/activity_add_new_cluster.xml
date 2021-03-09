@@ -4,7 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".add_new_cluster">
+    android:clickable="false"
+    tools:context=".ui.adds.add_new_cluster">
+
+    <EditText
+        android:id="@+id/end_of_date_new_cluster2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/round_borders"
+        android:clickable="true"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:text="Добавить участников "
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_cluster_user_phone_text" />
 
     <View
         android:id="@+id/view"
@@ -96,5 +114,27 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/end_of_date_new_cluster" />
+
+    <Spinner
+        android:id="@+id/users_spinnerlist"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/end_of_date_new_cluster2" />
+
+    <Button
+        android:id="@+id/create_new_cluster_button"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="87dp"
+        android:background="@drawable/round_borders"
+        android:backgroundTint="@color/main_green"
+        android:text="создать новый кластер"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/users_spinnerlist" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
