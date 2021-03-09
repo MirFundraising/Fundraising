@@ -11,5 +11,4 @@ public class Client<Net> {
     private boolean connected = false;
     private Net net = null;
 
-
 }
