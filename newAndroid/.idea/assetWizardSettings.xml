@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../../AndroidStudio/icons/material/materialicons/settings/baseline_settings_24.xml" />
+                                      <entry key="url" value="file:/$PROJECT_DIR$/../../AndroidStudio/icons/material/materialicons/credit_card/baseline_credit_card_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -34,8 +34,8 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="129c7e" />
-                            <entry key="outputName" value="ic_baseline_settings_24" />
-                            <entry key="sourceFile" value="C:\Users\пк\Desktop\Картинки для ниса\waveCluster.svg" />
+                            <entry key="outputName" value="ic_baseline_credit_card_24" />
+                            <entry key="sourceFile" value="C:\Users\пк\Desktop\Картинки для ниса\waveFundraising.svg" />
                           </map>
                         </option>
                       </PersistentState>

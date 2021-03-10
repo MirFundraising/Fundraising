@@ -10,20 +10,16 @@ public class Cluster implements IdGettable{
     private long clusterId;
     private String clusterName;
     private int participantCounter;
-    private double goal;
     private ArrayList<User> users;
-
+    private ArrayList<Fundraising> fundraisings;//список сборов кластера
     public ArrayList<User> getUsers() {
         return users;
     }
-
-    public double getGoal() { return goal; }
 
     public Cluster(String clusterName, int participantCounter, double goal, ArrayList<User> users) {
         clusterId=getId();
         this.clusterName = clusterName;
         this.participantCounter = participantCounter;
-        this.goal = goal;
         this.users = users;
     }
 }
