@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-31:12
 MERGED from [androidx.navigation:navigation-ui:2.2.2] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\4c697d28d8330b9c438c6b6847fca9e7\navigation-ui-2.2.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\c81d39a79fa402136a8544175df432ff\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\655dc37091b53a1d451eef0026f359d4\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -14,6 +14,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\tigra\.g
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\fcf5af611bc33846b591cd77e4d0a38c\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.0-beta02] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\12b4d959021bfc0437247d5b64b93a28\recyclerview-1.2.0-beta02\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth:20.0.2] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\7dda96e319b6648d7ec29f3c0eb96bbb\jetified-firebase-auth-20.0.2\AndroidManifest.xml:17:1-83:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\9467dea77a5cea6c22f80debdbcfbe43\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\b8767dc4d06925d0d3d12179fa4a1bb1\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\c7f8487a83fb70bc0fe95934361948bc\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\be239b009dfffc91932de98bebada164\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\b5b347edaaec9d51dce7fb65634d8751\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -31,13 +33,18 @@ MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\tigra\.
 MERGED from [com.google.android.gms:play-services-basement:17.1.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\74483de84094d0d661b0d354666c2c5a\jetified-play-services-basement-17.1.0\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\77c1656fd6659de665ea29268968dea6\fragment-1.2.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-runtime:2.2.2] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\66ef0829778507409ceeca3a8f07c4d0\navigation-runtime-2.2.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\db889ea64d16a07318448041b39e1285\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\2437bf31fd4f83ffb43a1b8c57cc8058\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity:1.1.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\1f89204e28ca1be917247d324cd32c8c\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\7068ed399d21002b3af01917e1bc9a21\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\d0b6337f8ded1d5baa7ee5a05283f93a\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\860a7cb661f0f6b1bb67f57d27715b94\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\feef1f828a5e02b388bbcca05d9b3338\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\024d0659a3246560f1b743f7b8f5313c\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\cbfb4e43f798a1cd04e53763d03adb1a\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common:2.2.2] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\9ce2377872cf5bf4656e8a9e15cb45b5\navigation-common-2.2.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\c83b8dc50a8a93a5905719cf1bf92131\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\ab455e7f73159929447fa088924849d3\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.3.2] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\67144f8b09a953df3e7278900fce8670\core-1.3.2\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\2c57ca5c5cb33722ba8060cd1e094990\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:16.0.1] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\ed7a00c530c4c8cfc4b2d6ebc42b3d14\jetified-firebase-components-16.0.1\AndroidManifest.xml:15:1-23:12
@@ -48,26 +55,28 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\tigr
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\108ec4d3697c46900f7718a8c101df12\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\7bb25a4f6f211f0fd403b91af1b9692f\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\4317a1d7b8cde25faa986bdf4765a7af\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\0cd7e7a97bc09653a5836529c4f1e6db\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\c19316ee24d18218817a41ce7b88a2ac\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\bd68bb064f2db47327311ef87fd77014\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:5:5-24:19
+ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:5:5-29:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\c81d39a79fa402136a8544175df432ff\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\c81d39a79fa402136a8544175df432ff\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\d7f60efe91dc50766e89efcb1d143ec0\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -104,38 +113,54 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\ti
 		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:11:9-44
-activity#com.example.mirand.add_new_cluster
-ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:12:9-62
+activity#com.example.mirand.user_row
+ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:12:9-55
 	android:name
-		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:12:19-50
-activity#com.example.mirand.MainActivity
-ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:13:9-50
+		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:12:19-43
+activity#com.example.mirand.fundraising_row
+ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:13:9-53
 	android:name
-		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:13:19-47
-activity#com.example.mirand.ui.intro.activity_register
-ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:14:9-64
+		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:13:19-50
+activity#com.example.mirand.create_new_fundraising
+ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:14:9-60
 	android:name
-		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:14:19-61
-activity#com.example.mirand.ui.intro.activity_login
+		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:14:19-57
+activity#com.example.mirand.inside_cluster_activity
 ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:15:9-61
 	android:name
 		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:15:19-58
+activity#com.example.mirand.ui.adds.add_new_cluster
+ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:16:9-61
+	android:name
+		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:16:19-58
+activity#com.example.mirand.MainActivity
+ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:17:9-50
+	android:name
+		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:17:19-47
+activity#com.example.mirand.ui.intro.activity_register
+ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:18:9-64
+	android:name
+		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:18:19-61
+activity#com.example.mirand.ui.intro.activity_login
+ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:19:9-61
+	android:name
+		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:19:19-58
 activity#com.example.mirand.ui.intro.activity_welcome
-ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:16:9-23:20
+ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:20:9-28:20
 	android:label
-		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:18:13-45
+		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:22:13-45
 	android:name
-		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:17:13-54
+		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:21:13-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:19:13-22:29
+ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml:26:27-74
 uses-sdk
 INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml
@@ -160,6 +185,10 @@ MERGED from [androidx.recyclerview:recyclerview:1.2.0-beta02] C:\Users\tigra\.gr
 MERGED from [androidx.recyclerview:recyclerview:1.2.0-beta02] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\12b4d959021bfc0437247d5b64b93a28\recyclerview-1.2.0-beta02\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-auth:20.0.2] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\7dda96e319b6648d7ec29f3c0eb96bbb\jetified-firebase-auth-20.0.2\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:20.0.2] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\7dda96e319b6648d7ec29f3c0eb96bbb\jetified-firebase-auth-20.0.2\AndroidManifest.xml:21:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\9467dea77a5cea6c22f80debdbcfbe43\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\9467dea77a5cea6c22f80debdbcfbe43\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\b8767dc4d06925d0d3d12179fa4a1bb1\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\b8767dc4d06925d0d3d12179fa4a1bb1\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\c7f8487a83fb70bc0fe95934361948bc\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\c7f8487a83fb70bc0fe95934361948bc\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\be239b009dfffc91932de98bebada164\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -194,6 +223,8 @@ MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\tigra\.gradle\caches\tra
 MERGED from [androidx.fragment:fragment:1.2.4] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\77c1656fd6659de665ea29268968dea6\fragment-1.2.4\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-runtime:2.2.2] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\66ef0829778507409ceeca3a8f07c4d0\navigation-runtime-2.2.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-runtime:2.2.2] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\66ef0829778507409ceeca3a8f07c4d0\navigation-runtime-2.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\db889ea64d16a07318448041b39e1285\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\db889ea64d16a07318448041b39e1285\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\2437bf31fd4f83ffb43a1b8c57cc8058\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\2437bf31fd4f83ffb43a1b8c57cc8058\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.1.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\1f89204e28ca1be917247d324cd32c8c\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -204,10 +235,18 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\tigra\.gradl
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\d0b6337f8ded1d5baa7ee5a05283f93a\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\860a7cb661f0f6b1bb67f57d27715b94\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\860a7cb661f0f6b1bb67f57d27715b94\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\feef1f828a5e02b388bbcca05d9b3338\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\feef1f828a5e02b388bbcca05d9b3338\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\024d0659a3246560f1b743f7b8f5313c\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\024d0659a3246560f1b743f7b8f5313c\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\cbfb4e43f798a1cd04e53763d03adb1a\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\cbfb4e43f798a1cd04e53763d03adb1a\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-common:2.2.2] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\9ce2377872cf5bf4656e8a9e15cb45b5\navigation-common-2.2.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-common:2.2.2] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\9ce2377872cf5bf4656e8a9e15cb45b5\navigation-common-2.2.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\c83b8dc50a8a93a5905719cf1bf92131\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\c83b8dc50a8a93a5905719cf1bf92131\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\ab455e7f73159929447fa088924849d3\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\ab455e7f73159929447fa088924849d3\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.3.2] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\67144f8b09a953df3e7278900fce8670\core-1.3.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.3.2] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\67144f8b09a953df3e7278900fce8670\core-1.3.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\2c57ca5c5cb33722ba8060cd1e094990\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
@@ -228,6 +267,10 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\tigra\.gradle\cache
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\7bb25a4f6f211f0fd403b91af1b9692f\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\4317a1d7b8cde25faa986bdf4765a7af\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\4317a1d7b8cde25faa986bdf4765a7af\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\0cd7e7a97bc09653a5836529c4f1e6db\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\0cd7e7a97bc09653a5836529c4f1e6db\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\c19316ee24d18218817a41ce7b88a2ac\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\c19316ee24d18218817a41ce7b88a2ac\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\bd68bb064f2db47327311ef87fd77014\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\tigra\.gradle\caches\transforms-2\files-2.1\bd68bb064f2db47327311ef87fd77014\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\tigra\Desktop\test\Fundraising\newAndroid\app\src\main\AndroidManifest.xml

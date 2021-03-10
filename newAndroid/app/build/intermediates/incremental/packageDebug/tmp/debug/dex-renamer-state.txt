@@ -1,4 +1,4 @@
-#Mon Mar 08 22:06:20 MSK 2021
+#Thu Mar 11 00:36:08 MSK 2021
 base.0=C\:\\Users\\tigra\\Desktop\\test\\Fundraising\\newAndroid\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
