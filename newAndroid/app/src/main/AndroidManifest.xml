@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MirAnd">
-        <activity android:name=".user_row"></activity>
-        <activity android:name=".fundraising_row" />
+        <activity android:name=".InsideFundraisingActivity"></activity>
         <activity android:name=".create_new_fundraising" />
         <activity android:name=".inside_cluster_activity" />
         <activity android:name=".ui.adds.add_new_cluster" />

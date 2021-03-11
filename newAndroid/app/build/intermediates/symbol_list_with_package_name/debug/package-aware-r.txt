@@ -860,6 +860,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color green_ok
 color highlighted_text_material_dark
 color highlighted_text_material_light
@@ -1662,13 +1663,18 @@ id fitToContents
 id fixed
 id forever
 id fragment_container_view_tag
+id fundraising_row_current_fundraising_text
+id fundraising_row_expire_time_text
+id fundraising_row_goal_text
+id fundraising_row_your_fundraising_text
+id fundraising_upper_cardview
+id funraising_row_name_text
 id ghost_view
 id ghost_view_holder
 id go_to_register_text
 id gone
 id group_divider
 id groups
-id guideline2
 id hideable
 id home
 id homeAsUp
@@ -1747,6 +1753,7 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id notification_view
 id off
 id on
 id outline
@@ -1843,6 +1850,7 @@ id textView4
 id textView5
 id textView6
 id textView7
+id textView8
 id text_input_end_icon
 id text_input_start_icon
 id text_notifications
@@ -1955,12 +1963,10 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_new_cluster
 layout activity_create_new_fundraising
-layout activity_fundraising_row
 layout activity_inside_cluster_activity
 layout activity_login
 layout activity_main
 layout activity_register
-layout activity_user_row
 layout activity_welcome
 layout cluster_row
 layout custom_dialog
@@ -1983,6 +1989,7 @@ layout fragment_dialog_edit_new_card
 layout fragment_home
 layout fragment_notifications
 layout fragment_settings
+layout fundraising_row
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2013,6 +2020,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout notification_action
 layout notification_action_tombstone
+layout notification_invite_user_row
 layout notification_media_action
 layout notification_media_cancel_action
 layout notification_template_big_media
@@ -2042,6 +2050,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout user_row
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round

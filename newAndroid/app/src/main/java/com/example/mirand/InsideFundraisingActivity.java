@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class fundraising_row extends AppCompatActivity {
+public class InsideFundraisingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fundraising_row);
+        setContentView(R.layout.activity_inside_fundraising);
     }
 }

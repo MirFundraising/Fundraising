@@ -31,8 +31,6 @@ com/example/mirand/ui/intro/activity_welcome.java
  com.example.mirand.ui.intro.activity_welcome$1
 com/example/mirand/MainActivity.java
  com.example.mirand.MainActivity
-com/example/mirand/user_row.java
- com.example.mirand.user_row
 com/example/mirand/ui/home/HomeViewModel.java
  com.example.mirand.ui.home.HomeViewModel
 com/example/mirand/ui/home/HomeFragment.java
@@ -43,5 +41,3 @@ com/example/mirand/ui/dashboard/DashboardFragment.java
  com.example.mirand.ui.dashboard.DashboardFragment$1
 com/example/mirand/BuildConfig.java
  com.example.mirand.BuildConfig
-com/example/mirand/fundraising_row.java
- com.example.mirand.fundraising_row

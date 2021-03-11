@@ -22,8 +22,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MirAnd" >
-        <activity android:name="com.example.mirand.user_row" />
-        <activity android:name="com.example.mirand.fundraising_row" />
         <activity android:name="com.example.mirand.create_new_fundraising" />
         <activity android:name="com.example.mirand.inside_cluster_activity" />
         <activity android:name="com.example.mirand.ui.adds.add_new_cluster" />

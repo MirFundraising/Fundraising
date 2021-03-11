@@ -33,9 +33,10 @@
                         </option>
                         <option name="values">
                           <map>
+                            <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="129c7e" />
-                            <entry key="outputName" value="ic_baseline_credit_card_24" />
-                            <entry key="sourceFile" value="C:\Users\пк\Desktop\Картинки для ниса\waveFundraising.svg" />
+                            <entry key="outputName" value="ic_waveinsidef" />
+                            <entry key="sourceFile" value="C:\Users\пк\Desktop\Картинки для ниса\waveInsideF.svg" />
                           </map>
                         </option>
                       </PersistentState>
