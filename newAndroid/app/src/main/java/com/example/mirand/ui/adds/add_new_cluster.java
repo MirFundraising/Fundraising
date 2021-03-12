@@ -14,6 +14,6 @@ public class add_new_cluster extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_cluster);
-        phone=(EditText) findViewById(R.id.new_cluster_user_phone_text);
+        phone=(EditText) findViewById(R.id.new_cluster_user_card_text);
     }
 }

@@ -1,8 +1,10 @@
-package com.example.mirand;
+package com.example.mirand.ui.adds;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.mirand.R;
 
 public class create_new_fundraising extends AppCompatActivity {
 

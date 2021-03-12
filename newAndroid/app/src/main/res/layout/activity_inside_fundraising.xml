@@ -47,7 +47,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/aaa3"
+                android:id="@+id/choose_transaction_summ_text"
                 android:layout_width="0dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="16dp"
@@ -61,7 +61,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+                app:layout_constraintTop_toBottomOf="@+id/choose_your_card_spinner" />
 
             <TextView
                 android:layout_width="180dp"
@@ -166,7 +166,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/inside_fundraising_current_summ_text" />
 
             <Spinner
-                android:id="@+id/spinner2"
+                android:id="@+id/choose_your_card_spinner"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:layout_marginStart="32dp"
@@ -177,7 +177,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/aaa2" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/transfer_money_button"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
@@ -186,7 +186,7 @@
                 android:text="перевести"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/aaa3" />
+                app:layout_constraintTop_toBottomOf="@+id/choose_transaction_summ_text" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
