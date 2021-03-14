@@ -4,6 +4,10 @@
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_baseline_settings_24.xml"
     },
     {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_waveinsidef.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_waveinsidef.xml"
+    },
+    {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
@@ -12,12 +16,12 @@
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
-        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wave.xml.flat",
-        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_wave.xml"
-    },
-    {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_white_text_on_main_background.xml.flat",
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\white_text_on_main_background.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_wave.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\drawable\\ic_wave.xml"
     },
     {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_move_to_inbox_24.xml.flat",
@@ -106,6 +110,10 @@
     {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_new_cluster.xml.flat",
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\activity_add_new_cluster.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_inside_fundraising.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\activity_inside_fundraising.xml"
     },
     {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_user_row.xml.flat",
@@ -212,8 +220,16 @@
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\cluster_row.xml"
     },
     {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_user_join.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\notification_user_join.xml"
+    },
+    {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_user_send_money.xml.flat",
+        "source": "C:\\MirProject\\newAndroid\\app\\src\\main\\res\\layout\\notification_user_send_money.xml"
     },
     {
         "merged": "C:\\MirProject\\newAndroid\\app\\build\\intermediates\\res\\merged\\debug\\drawable_auth_mir.jpg.flat",

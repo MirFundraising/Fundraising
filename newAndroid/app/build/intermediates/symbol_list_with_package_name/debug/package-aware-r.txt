@@ -1469,6 +1469,7 @@ drawable ic_wave_main
 drawable ic_wave_main_bottom
 drawable ic_wavecluster
 drawable ic_wavefundraising
+drawable ic_waveinsidef
 drawable ic_wavenew
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
@@ -1511,6 +1512,8 @@ id SYM
 id TOP_END
 id TOP_START
 id Top_view
+id aaa
+id aaa2
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -1589,7 +1592,6 @@ id cancel_action
 id cancel_button
 id cant_auth_login_text
 id cardView
-id cardView2
 id center
 id center_horizontal
 id center_vertical
@@ -1602,6 +1604,8 @@ id choose_date
 id choose_date_fundraising_text
 id choose_time
 id choose_time_fundraising_text
+id choose_transaction_summ_text
+id choose_your_card_spinner
 id chose_date_and_time
 id chronometer
 id clear_text
@@ -1688,9 +1692,17 @@ id info
 id input_fundraising_goal_text
 id inside_cluster_name_text
 id inside_cluster_name_text2
+id inside_fundraising_current_summ_text
+id inside_fundraising_your_current_fundraising
 id invisible
+id invite_date
+id invite_text
+id invite_time_text
 id italic
 id item_touch_helper_previous_elevation
+id join_date
+id join_text
+id join_time
 id labeled
 id largeLabel
 id left
@@ -1699,8 +1711,8 @@ id line1
 id line3
 id listMode
 id list_item
-id main_user_card_recycler
 id main_user_cards_recycler
+id main_user_cluster_recycler
 id masked
 id media_actions
 id members_count_text
@@ -1745,7 +1757,8 @@ id navigation_home
 id navigation_notifications
 id never
 id new_cluster_layout
-id new_cluster_user_phone_text
+id new_cluster_user_card_text
+id new_cluter_name
 id new_fundraising_text_name
 id noScroll
 id none
@@ -1754,6 +1767,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id notification_view
+id notifications_join_cluster_button
 id off
 id on
 id outline
@@ -1798,6 +1812,9 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id send_code
+id send_money_date
+id send_money_text
+id send_money_time
 id send_to_this_phone_text
 id shortcut
 id showCustom
@@ -1843,7 +1860,9 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView10
+id textView11
 id textView12
+id textView14
 id textView2
 id textView3
 id textView4
@@ -1851,6 +1870,7 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id text_input_end_icon
 id text_input_start_icon
 id text_notifications
@@ -1867,6 +1887,7 @@ id topPanel
 id top_view
 id top_wave_view
 id touch_outside
+id transfer_money_button
 id transition_current_scene
 id transition_layout_save
 id transition_position
@@ -1884,6 +1905,7 @@ id user_permission_text
 id user_surname
 id users_spinnerlist
 id view
+id view10
 id view2
 id view3
 id view4
@@ -1891,6 +1913,7 @@ id view5
 id view6
 id view7
 id view8
+id view9
 id view_offset_helper
 id visible
 id visible_removing_fragment_view_tag
@@ -1964,6 +1987,7 @@ layout abc_tooltip
 layout activity_add_new_cluster
 layout activity_create_new_fundraising
 layout activity_inside_cluster_activity
+layout activity_inside_fundraising
 layout activity_login
 layout activity_main
 layout activity_register
@@ -2034,6 +2058,8 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout notification_user_join
+layout notification_user_send_money
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

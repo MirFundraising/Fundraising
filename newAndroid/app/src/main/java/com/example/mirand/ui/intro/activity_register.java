@@ -43,7 +43,7 @@ public class activity_register extends AppCompatActivity {
 
                 if (noEmptyFields) {
                     Log.v(TAG, String.valueOf(noEmptyFields));
-                    // TODO: Отправить на Сервер запрос добавления User с введенными данными.
+
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     finish();
                 }

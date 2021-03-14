@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [androidx.navigation:navigation-ui:2.2.2] C:\gradle\caches\transforms-2\files-2.1\4c697d28d8330b9c438c6b6847fca9e7\navigation-ui-2.2.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.1.0] C:\gradle\caches\transforms-2\files-2.1\c81d39a79fa402136a8544175df432ff\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\gradle\caches\transforms-2\files-2.1\655dc37091b53a1d451eef0026f359d4\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -58,25 +58,31 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\gradle\caches\transf
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\gradle\caches\transforms-2\files-2.1\0cd7e7a97bc09653a5836529c4f1e6db\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\gradle\caches\transforms-2\files-2.1\c19316ee24d18218817a41ce7b88a2ac\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\gradle\caches\transforms-2\files-2.1\bd68bb064f2db47327311ef87fd77014\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml
 		INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml
-		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml
-		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:4:5-66
+MERGED from [com.google.firebase:firebase-auth:20.0.2] C:\gradle\caches\transforms-2\files-2.1\7dda96e319b6648d7ec29f3c0eb96bbb\jetified-firebase-auth-20.0.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:20.0.2] C:\gradle\caches\transforms-2\files-2.1\7dda96e319b6648d7ec29f3c0eb96bbb\jetified-firebase-auth-20.0.2\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:5:5-27:19
+ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:5:5-28:19
 MERGED from [com.google.android.material:material:1.1.0] C:\gradle\caches\transforms-2\files-2.1\c81d39a79fa402136a8544175df432ff\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\gradle\caches\transforms-2\files-2.1\c81d39a79fa402136a8544175df432ff\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\gradle\caches\transforms-2\files-2.1\d7f60efe91dc50766e89efcb1d143ec0\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -113,46 +119,50 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\gradle\c
 		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:11:9-44
-activity#com.example.mirand.create_new_fundraising
-ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:12:9-60
+activity#com.example.mirand.InsideFundraisingActivity
+ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:12:9-72
 	android:name
-		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:12:19-57
+		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:12:19-60
+activity#com.example.mirand.ui.adds.create_new_fundraising
+ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:13:9-68
+	android:name
+		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:13:19-65
 activity#com.example.mirand.inside_cluster_activity
-ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:13:9-61
-	android:name
-		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:13:19-58
-activity#com.example.mirand.ui.adds.add_new_cluster
 ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:14:9-61
 	android:name
 		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:14:19-58
+activity#com.example.mirand.ui.adds.add_new_cluster
+ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:15:9-61
+	android:name
+		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:15:19-58
 activity#com.example.mirand.MainActivity
-ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:15:9-50
+ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:16:9-50
 	android:name
-		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:15:19-47
+		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:16:19-47
 activity#com.example.mirand.ui.intro.activity_register
-ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:16:9-64
+ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:17:9-64
 	android:name
-		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:16:19-61
+		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:17:19-61
 activity#com.example.mirand.ui.intro.activity_login
-ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:17:9-61
+ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:18:9-61
 	android:name
-		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:17:19-58
+		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:18:19-58
 activity#com.example.mirand.ui.intro.activity_welcome
-ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:18:9-26:20
+ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:19:9-27:20
 	android:label
-		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:20:13-45
+		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:21:13-45
 	android:name
-		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:19:13-54
+		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:20:13-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml:25:27-74
 uses-sdk
 INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml
@@ -275,10 +285,6 @@ INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml
 		INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml
 		ADDED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml
 		INJECTED from C:\MirProject\newAndroid\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-auth:20.0.2] C:\gradle\caches\transforms-2\files-2.1\7dda96e319b6648d7ec29f3c0eb96bbb\jetified-firebase-auth-20.0.2\AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-auth:20.0.2] C:\gradle\caches\transforms-2\files-2.1\7dda96e319b6648d7ec29f3c0eb96bbb\jetified-firebase-auth-20.0.2\AndroidManifest.xml:23:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:20.0.2] C:\gradle\caches\transforms-2\files-2.1\7dda96e319b6648d7ec29f3c0eb96bbb\jetified-firebase-auth-20.0.2\AndroidManifest.xml:24:5-79
 	android:name
