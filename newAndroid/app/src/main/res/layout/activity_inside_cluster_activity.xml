@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".inside_cluster_activity">
+    tools:context=".ui.insides.inside_cluster_activity">
 
     <View
         android:id="@+id/view5"
@@ -24,8 +24,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view5" />
 
-    <TextView
-        android:id="@+id/inside_cluster_name_text2"
+    <EditText
+        android:id="@+id/inside_cluster_role_text"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
         android:text="Ваша роль: "
@@ -38,7 +38,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inside_cluster_name_text" />
 
-    <TextView
+    <EditText
         android:id="@+id/inside_cluster_name_text"
         android:layout_width="wrap_content"
         android:layout_height="42dp"
@@ -73,6 +73,7 @@
                 android:layout_height="28dp"
                 android:layout_margin="12dp"
                 android:layout_marginTop="12dp"
+                android:onClick="addNewFundraising"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/textView6"
@@ -85,10 +86,11 @@
                 android:layout_height="28dp"
                 android:layout_margin="12dp"
                 android:layout_marginTop="12dp"
+                android:onClick="addNewMember"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/textView7"
-                app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+                app:layout_constraintTop_toBottomOf="@+id/fundraising_recycler"
                 app:srcCompat="@drawable/ic_baseline_add_24" />
 
             <TextView
@@ -105,7 +107,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView"
+                android:id="@+id/fundraising_recycler"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_marginTop="12dp"
@@ -124,10 +126,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.045"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+                app:layout_constraintTop_toBottomOf="@+id/fundraising_recycler" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerView2"
+                android:id="@+id/cluster_users_recycler"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_marginTop="13dp"

@@ -8,11 +8,11 @@
     tools:context=".ui.adds.add_new_cluster">
 
     <EditText
-        android:id="@+id/end_of_date_new_cluster2"
+        android:id="@+id/add_new_cluster_add_new_person"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/round_borders"
         android:clickable="true"
@@ -22,7 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/new_cluster_user_phone_text" />
+        app:layout_constraintTop_toBottomOf="@+id/choose_date" />
 
     <View
         android:id="@+id/view"
@@ -59,7 +59,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/new_cluster_user_phone_text"
+        android:id="@+id/new_cluster_user_card_number_text"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
@@ -87,7 +87,7 @@
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/new_cluster_user_phone_text" />
+        app:layout_constraintTop_toBottomOf="@+id/new_cluster_user_card_number_text" />
 
     <EditText
         android:id="@+id/choose_date"
@@ -97,6 +97,7 @@
         android:layout_marginTop="28dp"
         android:background="@drawable/round_borders"
         android:hint=" Выбрать дату"
+        android:onClick="setDate"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,6 +111,7 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/round_borders"
         android:hint=" Выбрать время"
+        android:onClick="setTime"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -119,10 +121,12 @@
         android:id="@+id/users_spinnerlist"
         android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/end_of_date_new_cluster2" />
+        app:layout_constraintTop_toBottomOf="@+id/add_new_cluster_add_new_person" />
 
     <Button
         android:id="@+id/create_new_cluster_button"
@@ -131,6 +135,7 @@
         android:layout_marginTop="87dp"
         android:background="@drawable/round_borders"
         android:backgroundTint="@color/main_green"
+        android:onClick="createNewCluster"
         android:text="создать новый кластер"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"

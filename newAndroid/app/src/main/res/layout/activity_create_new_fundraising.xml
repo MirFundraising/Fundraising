@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".create_new_fundraising">
+    tools:context=".ui.adds.create_new_fundraising">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -32,6 +32,7 @@
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/white_borders"
                 android:hint="  Выберите время"
+                android:onClick="setTime"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -64,13 +65,14 @@
                 android:layout_marginEnd="15dp"
                 android:background="@drawable/white_borders"
                 android:hint="  Выберите дату"
+                android:onClick="setDate"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toStartOf="@+id/choose_time_fundraising_text"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/chose_date_and_time" />
 
-            <TextView
+            <EditText
                 android:id="@+id/input_fundraising_goal_text"
                 android:layout_width="0dp"
                 android:layout_height="45dp"
@@ -86,7 +88,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/new_fundraising_text_name" />
 
-            <TextView
+            <EditText
                 android:id="@+id/new_fundraising_text_name"
                 android:layout_width="0dp"
                 android:layout_height="45dp"
@@ -108,6 +110,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
                 android:backgroundTint="@color/main_green"
+                android:onClick="createNewFundraising"
                 android:text="Создать сбор"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
