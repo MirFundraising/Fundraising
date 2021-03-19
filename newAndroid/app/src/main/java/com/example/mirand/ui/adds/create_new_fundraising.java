@@ -73,6 +73,6 @@ public class create_new_fundraising extends AppCompatActivity {
         }
     };
     public void createNewFundraising(View view){
-
+        
     }
 }
