@@ -13,19 +13,21 @@ import com.example.mirand.R;
 import org.w3c.dom.Text;
 
 public class InsideFundraisingActivity extends AppCompatActivity {
-    private EditText fundName;
-    private EditText fundRole;
+    private TextView fundName;
+    private TextView fundRole;
     private TextView currentSumm;
     private TextView yourFund;
     private TextView currentCardNumber;
     private Spinner cardSpinner;
     private EditText transactionSummary;
+
+    private String
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inside_fundraising);
-        fundName=(EditText)findViewById(R.id.inside_fundraising_name);
-        fundRole=(EditText)findViewById(R.id.inside_fundraising_role);
+        fundName=(TextView) findViewById(R.id.inside_fundraising_name);
+        fundRole=(TextView) findViewById(R.id.inside_fundraising_role);
         currentSumm=(TextView)findViewById(R.id.inside_fundraising_current_summ_text);
         yourFund=(TextView)findViewById(R.id.inside_fundraising_your_current_fundraising);
         currentCardNumber=(TextView)findViewById(R.id.current_card_number);
@@ -33,6 +35,6 @@ public class InsideFundraisingActivity extends AppCompatActivity {
         transactionSummary=(EditText) findViewById(R.id.choose_transaction_summ_text);
     }
     public void transfer(View view){
-
+        if ()
     }
 }

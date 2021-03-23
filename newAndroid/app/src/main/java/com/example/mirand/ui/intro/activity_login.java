@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import com.example.mirand.R;
+import com.example.mirand.database.DBHandler;
+import com.example.mirand.util.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseException;
@@ -28,6 +30,11 @@ public class activity_login extends AppCompatActivity {
     private Button mSendCode;
     private Button mLogIn;
     private EditText mPhoneNumber;
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
     private EditText mCode;
     private String id;
     private String phoneNumber;
@@ -141,6 +148,7 @@ public class activity_login extends AppCompatActivity {
     }
 
     private void logIn() {
-
+        DBHandler dbHandler=new DBHandler();
+        User user=new User();
     }
 }

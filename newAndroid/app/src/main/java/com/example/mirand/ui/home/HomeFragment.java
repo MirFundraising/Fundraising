@@ -13,9 +13,11 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.mirand.R;
+import com.example.mirand.util.User;
 
 public class HomeFragment extends Fragment {
 
+    public User user;
     private HomeViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,

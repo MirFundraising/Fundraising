@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.format.DateUtils;
 import android.view.View;
@@ -12,26 +13,40 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
-
+import com.example.mirand.ui.home.HomeFragment;
 import com.example.mirand.MainActivity;
 import com.example.mirand.R;
+import com.example.mirand.ui.home.HomeFragment;
+import com.example.mirand.ui.insides.inside_cluster_activity;
+import com.example.mirand.util.Cluster;
+import com.example.mirand.util.User;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class add_new_cluster extends AppCompatActivity {
+    private EditText name;
+    private Cluster cluster;
     private EditText cardNumber;
     private TextView currentDateTime;
     private Calendar dateAndTime=Calendar.getInstance();
     private Spinner inviteIntoCluster;
 
+    private String mName;
+    private String mCardNumber;
+    private ArrayList<User> clusterMembers;
+    private HomeFragment hf;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_cluster);
+        name=(EditText)findViewById(R.id.new_cluster_name);
         cardNumber=(EditText) findViewById(R.id.new_cluster_user_card_number_text);
         currentDateTime=(TextView)findViewById(R.id.end_of_date_new_cluster);
         inviteIntoCluster=(Spinner)findViewById(R.id.users_spinnerlist);
         setInitialDateTime();
+        hf=new HomeFragment();
     }
 
     // отображаем диалоговое окно для выбора даты
@@ -78,6 +93,13 @@ public class add_new_cluster extends AppCompatActivity {
         }
     };
     public void createNewCluster(View view){
-
+        mName=name.getText().toString();
+        mCardNumber=cardNumber.getText().toString();
+        if (!mName.isEmpty()&&!mCardNumber.isEmpty()){
+            cluster=new Cluster(mName,clusterMembers.size(),clusterMembers);
+            hf.user.addClusters(cluster);
+            startActivity(new Intent(add_new_cluster.this, inside_cluster_activity.class));
+            finish();
+        }
     }
 }

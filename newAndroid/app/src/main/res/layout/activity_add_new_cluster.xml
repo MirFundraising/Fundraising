@@ -8,6 +8,23 @@
     tools:context=".ui.adds.add_new_cluster">
 
     <EditText
+        android:id="@+id/new_cluster_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/round_borders"
+        android:drawableStart="@drawable/ic_baseline_settings_24"
+        android:hint="Название кластера"
+        android:inputType="phone"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <EditText
         android:id="@+id/add_new_cluster_add_new_person"
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -63,7 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="108dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/round_borders"
         android:drawableStart="@drawable/ic_baseline_credit_card_24"
@@ -71,6 +88,7 @@
         android:inputType="phone"
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/view2"
         app:layout_constraintTop_toBottomOf="@+id/view2" />
 
@@ -132,13 +150,14 @@
         android:id="@+id/create_new_cluster_button"
         android:layout_width="0dp"
         android:layout_height="65dp"
-        android:layout_marginTop="87dp"
+        android:layout_marginTop="36dp"
         android:background="@drawable/round_borders"
         android:backgroundTint="@color/main_green"
         android:onClick="createNewCluster"
         android:text="создать новый кластер"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/users_spinnerlist" />
 

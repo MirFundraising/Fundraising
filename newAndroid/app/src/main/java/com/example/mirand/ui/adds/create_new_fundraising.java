@@ -13,6 +13,9 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 
 import com.example.mirand.R;
+import com.example.mirand.ui.insides.inside_cluster_activity;
+import com.example.mirand.util.Cluster;
+import com.example.mirand.util.Fundraising;
 
 import java.util.Calendar;
 
@@ -22,6 +25,10 @@ public class create_new_fundraising extends AppCompatActivity {
     private TextView fundraisingExploitDate;
     private Calendar dateAndTime=Calendar.getInstance();
 
+    private String mName;
+    private Long mGoal;
+    private Fundraising fundraising;
+    private Cluster cluster;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,6 +80,15 @@ public class create_new_fundraising extends AppCompatActivity {
         }
     };
     public void createNewFundraising(View view){
-        
+        mName=fundraisingName.getText().toString();
+        if (!mName.isEmpty()) {
+            if (!fundraisingSummary.getText().toString().isEmpty()) {
+                mGoal = Long.getLong(fundraisingSummary.getText().toString());
+                if (mGoal>0&&mGoal<1000000){
+                    fundraising=new Fundraising(mGoal,true,mName,dateAndTime);
+                    cluster.addFundraising(fundraising);
+                }
+            }
+        }
     }
 }
