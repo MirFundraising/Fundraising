@@ -18,6 +18,7 @@ public class Cluster implements IdGettable {
     public ArrayList<User> getUsers() {
         return users;
     }
+    public void setUsers(ArrayList<User> users) { this.users = users; }
 
     public int getParticipantCounter() {
         return participantCounter;
