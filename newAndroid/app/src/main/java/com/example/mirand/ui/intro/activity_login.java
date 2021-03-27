@@ -149,6 +149,5 @@ public class activity_login extends AppCompatActivity {
 
     private void logIn() {
         DBHandler dbHandler=new DBHandler();
-        User user=new User();
     }
 }

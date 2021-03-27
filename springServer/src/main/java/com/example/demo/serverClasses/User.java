@@ -23,6 +23,10 @@ public class User implements IdGettable {
     private ArrayList<Cluster> clusters;
     private HashMap<Long, Permission> userPermissionOnClusterId;
 
+    public User() {
+
+    }
+
     public Long getMemberId() {
         return memberId;
     }

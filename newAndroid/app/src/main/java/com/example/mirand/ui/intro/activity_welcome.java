@@ -26,7 +26,7 @@ public class activity_welcome extends AppCompatActivity {
         mEnter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(mAuth.getCurrentUser() == null) {
+                if (mAuth.getCurrentUser() == null) {
                     startActivity(new Intent(getApplicationContext(), activity_login.class));
                     finish();
                 }
