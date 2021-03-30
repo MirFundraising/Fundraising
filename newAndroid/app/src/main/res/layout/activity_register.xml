@@ -6,19 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.intro.activity_register">
 
-    <TextView
-        android:id="@+id/cant_auth_register_text"
-        android:layout_width="247dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="не удалось авторизоваться"
-        android:textColor="@color/red_ok"
-        android:textSize="18sp"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/get_sms_code_text" />
-
     <View
         android:id="@+id/Top_view"
         android:layout_width="wrap_content"
@@ -39,9 +26,9 @@
 
     <EditText
         android:id="@+id/user_surname"
-        android:layout_width="247dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/round_borders"
         android:drawableStart="@drawable/ic_baseline_person_24"
         android:hint="Введите фамилию"
@@ -69,7 +56,7 @@
 
     <EditText
         android:id="@+id/user_name"
-        android:layout_width="247dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/round_borders"
@@ -83,9 +70,9 @@
 
     <EditText
         android:id="@+id/birth_date"
-        android:layout_width="247dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/round_borders"
         android:drawableStart="@drawable/ic_baseline_date_range_24"
         android:ems="10"
@@ -99,9 +86,9 @@
 
     <EditText
         android:id="@+id/email_text"
-        android:layout_width="247dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/round_borders"
         android:drawableStart="@drawable/ic_baseline_email_24"
         android:ems="10"
@@ -117,7 +104,7 @@
         android:id="@+id/continue_button"
         android:layout_width="342dp"
         android:layout_height="61dp"
-        android:layout_marginTop="228dp"
+        android:layout_marginTop="120dp"
         android:background="@drawable/round_borders"
         android:text="ЗАРЕГИСТРИРОВАТЬСЯ"
         android:textColor="@color/white"
@@ -127,59 +114,5 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_text" />
-
-    <EditText
-        android:id="@+id/phone_number_text"
-        android:layout_width="247dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/round_borders"
-        android:drawableStart="@drawable/ic_baseline_phone_android_24"
-        android:ems="10"
-        android:hint="Введите номер телефона"
-        android:inputType="phone"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_text" />
-
-    <EditText
-        android:id="@+id/get_sms_code_text"
-        android:layout_width="247dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/round_borders"
-        android:drawableStart="@drawable/ic_baseline_move_to_inbox_24"
-        android:ems="10"
-        android:hint="Введите код из смс"
-        android:inputType="number"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/send_register_code" />
-
-    <Button
-        android:id="@+id/send_register_code"
-        android:layout_width="247dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/main_green"
-        android:text="отправить код"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone_number_text" />
-
-    <TextView
-        android:id="@+id/go_to_login_text"
-        android:layout_width="247dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Уже есть аккаунт? Нажмите здесь!"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cant_auth_register_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

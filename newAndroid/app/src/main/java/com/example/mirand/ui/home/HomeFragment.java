@@ -4,19 +4,29 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mirand.R;
+import com.example.mirand.util.User;
 
 public class HomeFragment extends Fragment {
 
+    public User user;
     private HomeViewModel homeViewModel;
+    private ImageView addCluster;
+    private ImageView addCard;
+    private RecyclerView clusterRecycler;
+    private RecyclerView cardRecycler;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -29,6 +39,17 @@ public class HomeFragment extends Fragment {
 
             }
         });
+        addCard=(ImageView)root.findViewById(R.id.add_new_card_image);
+        addCluster=(ImageView)root.findViewById(R.id.add_new_cluster_image);
+        clusterRecycler=(RecyclerView)root.findViewById(R.id.main_user_cluster_recycler);
+        cardRecycler=(RecyclerView)root.findViewById(R.id.main_user_cards_recycler);
+        addCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                
+            }
+        });
         return root;
     }
+
 }

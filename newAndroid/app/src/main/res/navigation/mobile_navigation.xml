@@ -15,7 +15,7 @@
         android:id="@+id/navigation_add_cluster"
         android:name="com.example.mirand.ui.dashboard.DashboardFragment"
         android:label="@string/title_add_cluster"
-        tools:layout="@layout/fragment_cluster_list" />
+        tools:layout="@layout/fragment_settings" />
 
     <fragment
         android:id="@+id/navigation_notifications"
