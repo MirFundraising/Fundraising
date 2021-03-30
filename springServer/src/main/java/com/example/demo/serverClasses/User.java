@@ -34,6 +34,10 @@ public class User implements IdGettable {
         return memberId;
     }
 
+    public HashMap<Long, Permission> getUserPermissionOnClusterId() {
+        return userPermissionOnClusterId;
+    }
+
     public String getName() {
         return name;
     }
@@ -83,7 +87,7 @@ public class User implements IdGettable {
         this.balance = balance;
     }
 
-    public void addCardToCluster(Cluster cluster, String cardNumber, String cardHolderSurname,
+    public String addCardToCluster(Cluster cluster, String cardNumber, String cardHolderSurname,
                     String cardHolderName, Date cardExpire, int cvcCode) {
         try {
             ArrayList<User> users = cluster.getUsers();
@@ -92,10 +96,9 @@ public class User implements IdGettable {
                 throw new RuntimeException();
             users.add(user);
             cluster.setUsers(users);
-            // TODO сообщение Илье об успешной добавлении
+            return "User was added to cluster successfully!";
         } catch (RuntimeException e) {
-            // TODO сообщение Илье об ошибке
-            throw new RuntimeException();
+            return "Error! User was not add to cluster! " + e.getMessage();
         }
     }
 
