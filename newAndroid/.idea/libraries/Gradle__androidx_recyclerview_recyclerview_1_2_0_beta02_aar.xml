@@ -15,7 +15,6 @@
     <JAVADOC />
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/../../gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.2.0-beta02/3ab7c96d9c094ab334c829fd823f5ae6b93f8994/recyclerview-1.2.0-beta02-sources.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.2.0-beta02/3ab7c96d9c094ab334c829fd823f5ae6b93f8994/recyclerview-1.2.0-beta02-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
