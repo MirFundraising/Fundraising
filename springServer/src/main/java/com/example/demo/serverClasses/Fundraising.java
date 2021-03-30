@@ -9,5 +9,7 @@ public class Fundraising {
     String fundraisingName;//название сбора
     int databaseId;//id для базы данных
     Calendar fundraisingExpire;//дата окончания сбора
-    ArrayList<Integer> transactionList;//список перечисленных денег
+    ArrayList<Integer> transactionList;//список транзакций
+    double currentFundSumm;
+
 }

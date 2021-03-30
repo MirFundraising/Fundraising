@@ -20,8 +20,6 @@ public class User implements IdGettable {
     private String birthDate;//дата рождения
     private String email;//email
     private String telephoneNumber;//телефонный номер
-    private Double balance;// баланс пользователя
-    private String password;
     private ArrayList<Cluster> clusters;
     private HashMap<Long, Permission> userPermissionOnClusterId;
     private ArrayList<CreditCard> userCards=new ArrayList<>();
@@ -50,14 +48,6 @@ public class User implements IdGettable {
         return telephoneNumber;
     }
 
-    public double getBalance() {
-        return balance;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
-
     public void addUserCard(CreditCard card){
         userCards.add(card);
     }
@@ -75,8 +65,6 @@ public class User implements IdGettable {
         this.birthDate = birthDate;
         this.email = email;
         this.telephoneNumber = telephoneNumber;
-        this.password = password;
-        this.balance = balance;
     }
 
     public void addCardToCluster(Cluster cluster, String cardNumber, String cardHolderSurname,
