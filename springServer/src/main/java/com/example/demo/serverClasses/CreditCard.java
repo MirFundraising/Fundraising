@@ -3,6 +3,7 @@ package com.example.demo.serverClasses;
 import java.util.Date;
 
 public class CreditCard {
+    private long cardId;
     private String cardNumber;
     private Date cardExpire;
     private String cardHolderName;
