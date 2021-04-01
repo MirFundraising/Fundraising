@@ -1,21 +1,19 @@
 package com.example.demo.serverClasses;
 
-import java.util.Date;
+import java.time.Instant;
 
 public class Transaction {
-    private long transactionId;//номер транзакции именно наш для бд
+    private final long transactionId;//номер транзакции именно наш для бд
 
-    private String transactionType="0100";//тип запроса 0100
-    private String transactionSumm;//сумма транзакции
-    private String transactionCode="28";//код транзакции всегда 28
-    private Date transactionDate;//дата транзакции
-    private Date transactionTime;//время тразакции
+    private String transactionType = "0100";//тип запроса 0100
+    private final String transactionSum;//сумма транзакции
+    private final String transactionCode = "28";//код транзакции всегда 28
+    private final Instant transactionTime;//дата и время транзакции
 
-    public Transaction(long transactionId,String transactionType,String transactionSumm,Date transactionDate,Date transactionTime) {
+    public Transaction(long transactionId, String transactionType, String transactionSum, Instant transactionTime) {
         this.transactionId = transactionId;
         this.transactionType = transactionType;
-        this.transactionSumm = transactionSumm;
-        this.transactionDate = transactionDate;
+        this.transactionSum = transactionSum;
         this.transactionTime = transactionTime;
     }
 }
