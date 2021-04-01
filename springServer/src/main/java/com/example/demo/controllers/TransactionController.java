@@ -35,8 +35,8 @@ public class TransactionController {
         // СОЗДАТЬ ТРАНЗАКЦИЮ И ДОБАВИТЬ В БД, ЕСЛИ ОК ВЕРНУТЬ НАЗАД
         try {
             Transaction transaction1 = new Transaction(transaction.getTransactionId(),
-                    transaction.getTransactionType(), transaction.getTransactionSumm(),
-                    transaction.getTransactionDate(), transaction.getTransactionTime());
+                    transaction.getTransactionType(), transaction.getTransactionSum(),
+                    transaction.getTransactionTime());
             return transaction1;
         }
         catch (Exception e) {
