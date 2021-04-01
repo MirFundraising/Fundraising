@@ -1,14 +1,19 @@
 package com.example.demo.serverClasses;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.time.Instant;
 import java.util.Date;
 
+@Entity
 public class CreditCard {
+    @Id
     private long cardId;
-    private String cardNumber;
-    private Date cardExpire;
-    private String cardHolderName;
-    private String cardHolderSurname;
-    private int cvcCode;
+    private final String cardNumber;
+    private final Date cardExpire;
+    private final String cardHolderName;
+    private final String cardHolderSurname;
+    private final int cvcCode;
 
     public CreditCard(String cardNumber, Date cardExpire, String cardHolderName, String cardHolderSurname, int cvcCode) {
         this.cardNumber = cardNumber;
@@ -16,6 +21,14 @@ public class CreditCard {
         this.cardHolderName = cardHolderName;
         this.cardHolderSurname = cardHolderSurname;
         this.cvcCode = cvcCode;
+    }
+
+    protected CreditCard() {
+        cardNumber = "";
+        cardExpire = Date.from(Instant.now());
+        cardHolderName = "";
+        cardHolderSurname = "";
+        cvcCode = 666;
     }
 
     public String getCardNumber() {
