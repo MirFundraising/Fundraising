@@ -13,20 +13,24 @@ public class FundraisingController {
     @GetMapping
     public List<Fundraising> getFundraisingListOfCluster(){
         //TODO СВЯЗЬ С БД И ВОЗВРАТ ВСЕХ СБОРОВ КОНКРЕТНОГО КЛАСТЕРА
+        return  null;
     }
     @GetMapping("{id}")
     public Fundraising getFundraisingById(@PathVariable String id){
         //TODO ПОЛУЧИТЬ КОНКРЕТНЫЙ СБОР КЛАСТЕРА ПО АЙДИ (МБ ИНАЧЕ, ПО НАЗВАНИЮ ТАМ, ПОДУМАЙ КАК ВОЗМОЖНО)
+        return null;
     }
 
     @PostMapping
     public Fundraising createNewFundraising(@RequestBody Fundraising fundraising){
         //TODO ДОБАВИТЬ СБОР В БД И ВЕРНУТЬ ЕГО ОБРАТНО ПРИ УСПЕШНОМ ДОБАВЛЕНИИ В БД
+        return  null;
     }
 
     @PutMapping("{id}")
     public Fundraising changeFundraisingCurrentFunds(@PathVariable String id,@RequestBody Fundraising fundraising){
         //TODO МЕНЯТЬ В КОНКРЕТНОМ СБОРЕ ТЕКУЩУЮ СУММУ СБОРА ПОЭТОМУ И ПУТ
+        return null;
     }
 
 }

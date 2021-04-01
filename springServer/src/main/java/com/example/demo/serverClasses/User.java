@@ -23,6 +23,18 @@ public class User implements IdGettable {
     @OneToMany
     private final List<CreditCard> userCards;
 
+    protected User() {
+        memberId = getId();
+        this.name = "";
+        this.surname = "";
+        this.birthDate = "";
+        this.email = "";
+        this.telephoneNumber = "";
+        clusters = new ArrayList<>();
+        userCards = new ArrayList<>();
+        userPermissionOnClusterId = new HashMap<>();
+    }
+
     public Long getMemberId() {
         return memberId;
     }

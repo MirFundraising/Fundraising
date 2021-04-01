@@ -13,13 +13,16 @@ public class TransactionController {
     @GetMapping
     public List<Transaction> getFundraisingTransactionList(){
         //TODO ПОЛУЧАТЬ ВЕСЬ СПИСОК ТРАНЗАКЦИЙ КОНКРЕТНОГО СБОРА
+        return null;
     }
     @GetMapping("{id}")
     public Transaction getTransactionById(@PathVariable String id){
         //TODO ПОЛУЧАТЬ КОНКРЕТНУЮ ТРАНЗАКЦИЮ ПО НОМЕРУ ТРАНЗАКЦИИ
+        return null;
     }
     @PostMapping
     public Transaction createNewTransaction(@RequestBody Transaction transaction){
         //TODO СОЗДАТЬ ТРАНЗАКЦИЮ И ДОБАВИТЬ В БД, ЕСЛИ ОК ВЕРНУТЬ НАЗАД
+        return null;
     }
 }
