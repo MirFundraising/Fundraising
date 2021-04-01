@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.*;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("card")
@@ -31,7 +33,7 @@ public class CardController{
         user.addUserCard(creditCard);
         return creditCard;
     }
-    @GetMapping("{id}")
+    @GetMapping("{creditCardNumber}")
     public CreditCard getUserCardById(@PathVariable String creditCardNumber, @RequestBody User user){
         // получать по номеру карты конкретную карту из бд и возвращать ее
         CreditCard card = null;

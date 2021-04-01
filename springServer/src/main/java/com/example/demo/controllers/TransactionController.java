@@ -31,13 +31,13 @@ public class TransactionController {
         return transaction;
     }
     @PostMapping
-    public Transaction createNewTransaction(@RequestBody Transaction transaction){
+    public Transaction createNewTransaction(@RequestBody Transaction transaction, @RequestBody Fundraising fundraising){
         // СОЗДАТЬ ТРАНЗАКЦИЮ И ДОБАВИТЬ В БД, ЕСЛИ ОК ВЕРНУТЬ НАЗАД
         try {
-            Transaction transaction1 = new Transaction(transaction.getTransactionId(),
-                    transaction.getTransactionType(), transaction.getTransactionSum(),
-                    transaction.getTransactionTime());
-            return transaction1;
+            List<Transaction> transactions = fundraising.getTransactionList();
+            transactions.add(transaction);
+            fundraising.setTransactionList(transactions);
+            return transaction;
         }
         catch (Exception e) {
             return null;

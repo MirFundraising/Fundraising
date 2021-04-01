@@ -31,12 +31,13 @@ public class UserController {
         return user;
     }
     @PostMapping
-    public User createNewUser(@RequestBody User user){
+    public User createNewUser(@RequestBody User user, @RequestBody Cluster cluster){
         //СОЗДАНИЕ И ДОБАВЛЕНИЕ НОВОГО ПОЛЬЗОВАТЕЛЯ В БД И ВОЗВРАТ ЕГО ЕСЛИ ВСЕ ОК
         try {
-            User user1 = new User(user.getName(), user.getSurname(), user.getBirthDate(),
-                    user.getEmail(), user.getTelephoneNumber(), "password", 0);
-            return user1;
+            List<User> users = cluster.getUsers();
+            users.add(user);
+            cluster.setUsers(users);
+            return user;
         }
         catch (Exception e) {
             return  null;

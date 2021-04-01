@@ -16,8 +16,8 @@ public class ClusterController {
         //ПОЛУЧАТЬ СПИСОК КЛАСТЕРОВ ЮЗЕРА ИЗ БД И ВОЗВРАЩАТЬ ИХ
         return user.getClusters();
     }
-    @GetMapping("{name}")
-    public Cluster getUserClusterByClusterName(String clusterName, @RequestBody User user){
+    @GetMapping("{clusterName}")
+    public Cluster getUserClusterByClusterName(@PathVariable String clusterName, @RequestBody User user){
         //ПОЛУЧАТЬ КЛАСТЕР ЮЗЕРА ПО НАЗВАНИ КЛАСТЕРА ИЗ БД И ВОЗВРАЩАТЬ ЕГО
         List<Cluster> clusters = user.getClusters();
         Cluster cluster = null;
@@ -31,12 +31,11 @@ public class ClusterController {
     }
 
     @PostMapping
-    public Cluster createNewUserCluster(@RequestBody Cluster cluster) {
+    public Cluster createNewUserCluster(@RequestBody Cluster cluster, @RequestBody User user) {
         // СОЗДАВАТЬ НОВЫЙ КЛАСТЕР ПОЛЬЗОВАТЕЛЯ, ДОБАВЛЯТЬ В БД И ЕСЛИ ВСЕ УСПЕШНО, ОТПРАВЛЯТЬ ЕГО НАЗАД
         try {
-            Cluster cluster1 = new Cluster(cluster.getName(), cluster.getParticipantCounter(),
-                    cluster.getGoal(), cluster.getUsers());
-            return cluster1;
+            user.addCluster(cluster);
+            return cluster;
         }
         catch (Exception e) {
             return null;
@@ -44,11 +43,13 @@ public class ClusterController {
     }
 
     @PutMapping("{name}")
-    public  Cluster addNewMemberToCluster(@PathVariable String name,@RequestBody Cluster cluster,
-                                          @RequestBody User user){//тут тоже
+    public  Cluster addNewMemberToCluster(@PathVariable String name, @RequestBody Cluster cluster,
+                                          @RequestBody User user){
         // ДОБАВЛЯТЬ НОВОГО ЮЗЕРА В КЛАСТЕР ПО НОМЕРУ ТЕЛЕФОНА ЮЗЕРА (У НАС УЖЕ ЕСТЬ КЛАСТЕР,
         // МЫ ПРОСТО ОБНОВЛЯЕМ ЕГО ДАННЫЕ
         // ПОЭТОМУ И PUT ЗАПРОС)
+
+        // name не смог использовать, так как не могу обращаться к БД
         try {
             cluster.addUser(user);
             return cluster;
