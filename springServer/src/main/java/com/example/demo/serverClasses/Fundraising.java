@@ -21,7 +21,9 @@ public class Fundraising {
     @OneToMany
     private List<Transaction> transactionList;//список транзакций
 
-    public List<Transaction> getTransactionList() { return transactionList; }
+    public List<Transaction> getTransactionList() {
+        return transactionList;
+    }
 
     public long getFundraisingId() {
         return fundraisingId;

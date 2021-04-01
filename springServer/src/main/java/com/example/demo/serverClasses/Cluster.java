@@ -34,9 +34,14 @@ public class Cluster implements IdGettable {
     public void setFundraisings(List<Fundraising> fundraisings) {
         this.fundraisings = fundraisings;
     }
-    public void addUser(User user) { users.add(user); }
 
-    public String getClusterName() { return name; }
+    public void addUser(User user) {
+        users.add(user);
+    }
+
+    public String getClusterName() {
+        return name;
+    }
 
     public List<User> getUsers() {
         return users;

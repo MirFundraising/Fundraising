@@ -24,6 +24,7 @@ class ClusterTest {
     private static final double goal = 6.66;
     private static final List<User> users = new ArrayList<>();
     private static final Cluster cluster;
+
     static {
         users.add(user);
         cluster = new Cluster(name, participantCounter, goal, users);
