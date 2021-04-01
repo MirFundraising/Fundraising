@@ -51,7 +51,7 @@ public class User implements IdGettable {
         userCards.add(card);
     }
 
-    public ArrayList<CreditCard> getUserCards() { return userCards; }
+    public List<CreditCard> getUserCards() { return userCards; }
 
     public User(String name, String surname, String birthDate,
                 String email, String telephoneNumber, String password, double balance) {
@@ -89,7 +89,7 @@ public class User implements IdGettable {
                          String cardHolderName, Date cardExpire, int cvcCode) {
         List<User> users = cluster.getUsers();
         for (int i = 0; i < users.size(); i++) {
-            ArrayList<CreditCard> cards = users.get(i).getUserCards();
+            List<CreditCard> cards = users.get(i).getUserCards();
             for (int j = 0; j < cards.size(); j++) {
                 if (cards.get(j).getCardNumber() == cardNumber &&
                 cards.get(j).getCardHolderSurname() == cardHolderSurname &&

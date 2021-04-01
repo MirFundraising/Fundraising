@@ -8,7 +8,7 @@ import java.util.List;
 
 @Entity
 public class Cluster implements IdGettable {
-    public Cluster() {
+    protected Cluster() {
 
     }
 

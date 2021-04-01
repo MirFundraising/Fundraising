@@ -30,4 +30,8 @@ public class Fundraising {
         this.transactionList = transactionList;
         this.currentFundSumm = currentFundSumm;
     }
+
+    protected Fundraising() {
+
+    }
 }
