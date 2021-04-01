@@ -1,5 +1,6 @@
 package com.example.mirand.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -51,8 +52,10 @@ public class HomeFragment extends Fragment {
         clusterRecycler=(RecyclerView)root.findViewById(R.id.main_user_cluster_recycler);
         cardRecycler=(RecyclerView)root.findViewById(R.id.main_user_cards_recycler);
         String[] clusterNames= (String[]) user.getClusters().stream().map(getClustersName).toArray();
-        Permission[] permissions= (Permission[]) user.getUserPermissionOnClusterId().
-        UserClustersRecycler userClustersRecycler=new UserClustersRecycler(this,clusterNames,);
+        Permission[] permissions= (Permission[]) user.getUserPermissionOnClusterId().values().toArray();
+        String[] cards=(String[]) user.getUserCards().stream().map(card -> card.getCardNumber()).toArray();
+        Integer[] membersCounter= (Integer[]) user.getClusters().stream().map(cluster -> cluster.getUsers().stream().count()).toArray();
+        UserClustersRecycler userClustersRecycler=new UserClustersRecycler(this.getContext(),clusterNames,membersCounter,permissions,cards);
         addCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

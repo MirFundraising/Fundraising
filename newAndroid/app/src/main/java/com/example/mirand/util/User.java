@@ -58,6 +58,11 @@ public class User {
     public void addUserCard(CreditCard card){
         userCards.add(card);
     }
+
+    public ArrayList<CreditCard> getUserCards() {
+        return userCards;
+    }
+
     public User(String name, String surname, java.sql.Date birthDate, String email, String telephoneNumber) {
         this.name = name;
         this.surname = surname;
