@@ -14,7 +14,8 @@ import java.util.List;
 @RestController
 @RequestMapping("card")
 public class CardController{
-    // МБ НУЖНЫ ЕЩЕ ССЫЛКИ, ОБЬЕКТЫ, ТАМ ЮЗЕР, КЛАСТЕР, НЕ ЗНАЮ, ДОБАВЬ ЕСЛИ НАДО
+    // в силу того, что БД не до конца реализована, я не могу наладить связь с БД,
+    // поэтому написал методы как мог
     DatabaseHandler databaseHandler = new DatabaseHandler();
 
     @GetMapping
