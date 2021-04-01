@@ -1,9 +1,6 @@
 package com.example.demo.serverClasses;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.*;
 
 @Entity
@@ -18,8 +15,12 @@ public class User implements IdGettable {
     private final String birthDate;//дата рождения
     private final String email;//email
     private final String telephoneNumber;//телефонный номер
+
+    @OneToMany
     private final List<Cluster> clusters;
+    @OneToMany
     private final Map<Long, Permission> userPermissionOnClusterId;
+    @OneToMany
     private final List<CreditCard> userCards;
 
     public Long getMemberId() {
@@ -71,7 +72,7 @@ public class User implements IdGettable {
     public void addCardToCluster(Cluster cluster, String cardNumber, String cardHolderSurname,
                     String cardHolderName, Date cardExpire, int cvcCode) {
         try {
-            ArrayList<User> users = cluster.getUsers();
+            List<User> users = cluster.getUsers();
             User user = getUser(cluster, cardNumber, cardHolderSurname, cardHolderName, cardExpire, cvcCode);
             if (user == null)
                 throw new RuntimeException();
@@ -86,7 +87,7 @@ public class User implements IdGettable {
 
     private User getUser(Cluster cluster, String cardNumber, String cardHolderSurname,
                          String cardHolderName, Date cardExpire, int cvcCode) {
-        ArrayList<User> users = cluster.getUsers();
+        List<User> users = cluster.getUsers();
         for (int i = 0; i < users.size(); i++) {
             ArrayList<CreditCard> cards = users.get(i).getUserCards();
             for (int j = 0; j < cards.size(); j++) {
