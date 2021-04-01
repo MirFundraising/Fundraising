@@ -19,7 +19,7 @@ public class Fundraising {
     private final Calendar fundraisingExpire;//дата окончания сбора
     private final double currentFundSum;//текущий сбор
     @OneToMany
-    private List<Transaction> transactionList;//список транзакций
+    private final List<Transaction> transactionList;//список транзакций
 
     public List<Transaction> getTransactionList() {
         return transactionList;

@@ -14,7 +14,13 @@ class FundraisingTest {
     Fundraising fundraising = new Fundraising(fundraisingId, 0, false, "", Calendar.getInstance(), new ArrayList<>(), 0);
 
     @Test
-    void getFundraisingId() {
+    void testGetFundraisingId() {
         assertEquals(fundraising.getFundraisingId(), fundraisingId);
     }
+
+    @Test
+    void getTransactionList() {
+        assertEquals(fundraising.getTransactionList(), new ArrayList<>());
+    }
+
 }
