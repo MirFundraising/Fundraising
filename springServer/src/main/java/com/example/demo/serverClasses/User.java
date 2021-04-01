@@ -18,7 +18,7 @@ public class User implements IdGettable {
 
     @OneToMany
     private final List<Cluster> clusters;
-    @OneToMany
+    @ElementCollection
     private final Map<Long, Permission> userPermissionOnClusterId;
     @OneToMany
     private final List<CreditCard> userCards;
