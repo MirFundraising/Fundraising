@@ -17,10 +17,17 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mirand.R;
+import com.example.mirand.adapters.UserClustersRecycler;
+import com.example.mirand.util.Cluster;
+import com.example.mirand.util.Permission;
 import com.example.mirand.util.User;
+
+import java.util.Map;
+import java.util.function.Function;
 
 public class HomeFragment extends Fragment {
 
+    private Function<Cluster,String> getClustersName=cluster -> cluster.getName();
     public User user;
     private HomeViewModel homeViewModel;
     private ImageView addCluster;
@@ -43,6 +50,9 @@ public class HomeFragment extends Fragment {
         addCluster=(ImageView)root.findViewById(R.id.add_new_cluster_image);
         clusterRecycler=(RecyclerView)root.findViewById(R.id.main_user_cluster_recycler);
         cardRecycler=(RecyclerView)root.findViewById(R.id.main_user_cards_recycler);
+        String[] clusterNames= (String[]) user.getClusters().stream().map(getClustersName).toArray();
+        Permission[] permissions= (Permission[]) user.getUserPermissionOnClusterId().
+        UserClustersRecycler userClustersRecycler=new UserClustersRecycler(this,clusterNames,);
         addCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

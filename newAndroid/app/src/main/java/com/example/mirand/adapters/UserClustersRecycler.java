@@ -7,10 +7,19 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.MyViewHolder> {
+import com.example.mirand.util.Permission;
 
-    public MyRecyclerViewAdapter(Context context){
+public class UserClustersRecycler extends RecyclerView.Adapter<UserClustersRecycler.MyViewHolder> {
 
+    private String[] names;
+    private Permission[] permissions;
+    private String[] cardNumbers;
+    private Context context;
+    public UserClustersRecycler(Context context, String[] clusterName, Permission[] permission, String[] cardNumberMoneyHolder){
+        this.context=context;
+        names=clusterName;
+        this.permissions=permission;
+        cardNumbers=cardNumberMoneyHolder;
     }
     @NonNull
     @Override
