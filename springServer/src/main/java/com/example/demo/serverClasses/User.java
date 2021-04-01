@@ -4,25 +4,23 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
+import java.util.*;
 
 @Entity
 public class User implements IdGettable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long memberId; //номер клиента в базе данных
+    private final Long memberId; //номер клиента в базе данных
 
-    private String name;//имя клиента
-    private String surname;//фамилия клиента
-    private String birthDate;//дата рождения
-    private String email;//email
-    private String telephoneNumber;//телефонный номер
-    private ArrayList<Cluster> clusters;
-    private HashMap<Long, Permission> userPermissionOnClusterId;
-    private ArrayList<CreditCard> userCards=new ArrayList<>();
+    private final String name;//имя клиента
+    private final String surname;//фамилия клиента
+    private final String birthDate;//дата рождения
+    private final String email;//email
+    private final String telephoneNumber;//телефонный номер
+    private final List<Cluster> clusters;
+    private final Map<Long, Permission> userPermissionOnClusterId;
+    private final List<CreditCard> userCards;
 
     public Long getMemberId() {
         return memberId;
@@ -65,6 +63,9 @@ public class User implements IdGettable {
         this.birthDate = birthDate;
         this.email = email;
         this.telephoneNumber = telephoneNumber;
+        clusters = new ArrayList<>();
+        userCards = new ArrayList<>();
+        userPermissionOnClusterId = new HashMap<>();
     }
 
     public void addCardToCluster(Cluster cluster, String cardNumber, String cardHolderSurname,
