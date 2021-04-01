@@ -52,7 +52,7 @@ public class User implements IdGettable {
         userCards.add(card);
     }
 
-    private ArrayList<CreditCard> getUserCards() { return userCards; }
+    public ArrayList<CreditCard> getUserCards() { return userCards; }
 
     public User(String name, String surname, String birthDate,
                 String email, String telephoneNumber, String password, double balance) {
