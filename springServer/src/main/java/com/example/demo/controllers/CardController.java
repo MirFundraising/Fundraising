@@ -24,7 +24,7 @@ public class CardController{
     }
 
     @PostMapping
-    public CreditCard addNewUserCard(@RequestBody User user, @RequestBody CreditCard creditCard){
+    public CreditCard addNewUserCard(@RequestBody CreditCard creditCard, @RequestBody User user){
         // обработка добавления новой карты в таблицу карт в бд
         List<CreditCard> creditCards = user.getUserCards();
         creditCards.add(creditCard);
@@ -32,7 +32,7 @@ public class CardController{
         return creditCard;
     }
     @GetMapping("{id}")
-    public CreditCard getUserCardById(@RequestBody User user, @PathVariable String creditCardNumber){
+    public CreditCard getUserCardById(@PathVariable String creditCardNumber, @RequestBody User user){
         // получать по номеру карты конкретную карту из бд и возвращать ее
         CreditCard card = null;
         List<CreditCard> creditCards = user.getUserCards();

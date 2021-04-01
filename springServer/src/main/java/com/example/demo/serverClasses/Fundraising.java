@@ -21,6 +21,10 @@ public class Fundraising {
     private List<Integer> transactionList;//список транзакций
     private double currentFundSumm;//текущий сбор
 
+    public long getFundraisingId () {
+        return fundraisingId;
+    }
+
     public Fundraising(long fundraisingId,double goal,boolean isGoalAllowed,String fundraisingName,Calendar fundraisingExpire,ArrayList<Integer> transactionList,double currentFundSumm) {
         this.fundraisingId = fundraisingId;
         this.goal = goal;
