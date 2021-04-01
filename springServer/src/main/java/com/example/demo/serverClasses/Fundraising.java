@@ -17,15 +17,17 @@ public class Fundraising {
     private boolean isGoalAllowed;//есть ли цель
     private String fundraisingName;//название сбора
     private Calendar fundraisingExpire;//дата окончания сбора
-    @ElementCollection
-    private List<Integer> transactionList;//список транзакций
     private double currentFundSumm;//текущий сбор
+    @OneToMany
+    private List<Transaction> transactionList;//список транзакций
+
+    public List<Transaction> getTransactionList() { return transactionList; }
 
     public long getFundraisingId () {
         return fundraisingId;
     }
 
-    public Fundraising(long fundraisingId,double goal,boolean isGoalAllowed,String fundraisingName,Calendar fundraisingExpire,ArrayList<Integer> transactionList,double currentFundSumm) {
+    public Fundraising(long fundraisingId,double goal,boolean isGoalAllowed,String fundraisingName,Calendar fundraisingExpire,ArrayList<Transaction> transactionList,double currentFundSumm) {
         this.fundraisingId = fundraisingId;
         this.goal = goal;
         this.isGoalAllowed = isGoalAllowed;
