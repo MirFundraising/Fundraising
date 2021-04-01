@@ -67,6 +67,8 @@ public class User implements IdGettable {
         return userCards;
     }
 
+    public List<Cluster> getClusters() { return clusters; }
+
     public User(String name, String surname, String birthDate,
                 String email, String telephoneNumber, String password, double balance) {
         memberId = getId();

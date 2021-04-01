@@ -8,7 +8,7 @@ public class Fundraising {
     boolean isGoalAllowed;//есть ли цель
     String fundraisingName;//название сбора
     Calendar fundraisingExpire;//дата окончания сбора
-    ArrayList<Integer> transactionList=new ArrayList<>();//список перечисленных денег
+    ArrayList<Transaction> transactionList=new ArrayList<>();//список перечисленных денег
     public Fundraising(double goal, boolean isGoalAllowed, String fundraisingName, Calendar fundraisingExpire) {
         this.goal = goal;
         this.isGoalAllowed = isGoalAllowed;

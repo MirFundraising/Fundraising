@@ -11,6 +11,8 @@ import java.util.List;
 @RestController
 @RequestMapping("fundraising")
 public class FundraisingController {
+    // в силу того, что БД не до конца реализована, я не могу наладить связь с БД,
+    // поэтому написал методы как мог
     @GetMapping
     public List<Fundraising> getFundraisingListOfCluster(@RequestBody Cluster cluster){
         //СВЯЗЬ С БД И ВОЗВРАТ ВСЕХ СБОРОВ КОНКРЕТНОГО КЛАСТЕРА
