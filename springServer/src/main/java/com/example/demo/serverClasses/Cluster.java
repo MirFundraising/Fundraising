@@ -24,7 +24,6 @@ public class Cluster implements IdGettable {
     private double goal;
     @OneToMany
     private List<User> users;
-
     @OneToMany
     private List<Fundraising> fundraisings;//список сборов кластера
 
