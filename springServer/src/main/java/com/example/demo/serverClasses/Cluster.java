@@ -83,5 +83,6 @@ public class Cluster implements IdGettable {
         this.name = name;
         this.participantCounter = participantCounter;
         this.users = users;
+        this.goal = goal;
     }
 }

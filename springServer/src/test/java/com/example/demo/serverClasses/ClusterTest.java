@@ -61,9 +61,10 @@ class ClusterTest {
 
     @Test
     void setParticipantCounter() {
-        int participantCounter = 999;
+        int participantCounter1 = 999;
+        cluster.setParticipantCounter(participantCounter1);
+        assertEquals(cluster.getParticipantCounter(), participantCounter1);
         cluster.setParticipantCounter(participantCounter);
-        assertEquals(cluster.getParticipantCounter(), participantCounter);
     }
 
     @Test
@@ -73,9 +74,10 @@ class ClusterTest {
 
     @Test
     void setGoal() {
-        double goal = 9.99;
+        double goal1 = 9.99;
+        cluster.setGoal(goal1);
+        assertEquals(cluster.getGoal(), goal1);
         cluster.setGoal(goal);
-        assertEquals(cluster.getGoal(), goal);
     }
 
     @Test
@@ -85,9 +87,10 @@ class ClusterTest {
 
     @Test
     void setName() {
-        String name = "name2";
+        String name2 = "name2";
+        cluster.setName(name2);
+        assertEquals(cluster.getName(), name2);
         cluster.setName(name);
-        assertEquals(cluster.getName(), name);
     }
 
     @Test
@@ -97,8 +100,10 @@ class ClusterTest {
 
     @Test
     void setClusterId() {
-        long clusterId = 999L;
-        cluster.setClusterId(clusterId);
-        assertEquals(cluster.getClusterId(), clusterId);
+        long clusterId2 = 999L;
+        cluster.setClusterId(clusterId2);
+        assertEquals(cluster.getClusterId(), clusterId2);
+        cluster.setClusterId(cluster.getId());
+
     }
 }
