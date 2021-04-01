@@ -56,33 +56,49 @@ class ClusterTest {
 
     @Test
     void getParticipantCounter() {
+        assertEquals(cluster.getParticipantCounter(), participantCounter);
     }
 
     @Test
     void setParticipantCounter() {
+        int participantCounter = 999;
+        cluster.setParticipantCounter(participantCounter);
+        assertEquals(cluster.getParticipantCounter(), participantCounter);
     }
 
     @Test
     void getGoal() {
+        assertEquals(cluster.getGoal(), goal);
     }
 
     @Test
     void setGoal() {
+        double goal = 9.99;
+        cluster.setGoal(goal);
+        assertEquals(cluster.getGoal(), goal);
     }
 
     @Test
     void getName() {
+        assertEquals(cluster.getName(), name);
     }
 
     @Test
     void setName() {
+        String name = "name2";
+        cluster.setName(name);
+        assertEquals(cluster.getName(), name);
     }
 
     @Test
     void getClusterId() {
+        assertEquals(cluster.getClusterId(), 0); // TODO не сделан getId
     }
 
     @Test
     void setClusterId() {
+        long clusterId = 999L;
+        cluster.setClusterId(clusterId);
+        assertEquals(cluster.getClusterId(), clusterId);
     }
 }
