@@ -11,33 +11,42 @@ import java.util.List;
 @Entity
 public class Fundraising {
     @Id
-    private long fundraisingId;//Для бд
+    private final long fundraisingId;//Для бд
 
-    private double goal;//сумма цели сбора
-    private boolean isGoalAllowed;//есть ли цель
-    private String fundraisingName;//название сбора
-    private Calendar fundraisingExpire;//дата окончания сбора
-    private double currentFundSumm;//текущий сбор
+    private final double goal;//сумма цели сбора
+    private final boolean isGoalAllowed;//есть ли цель
+    private final String fundraisingName;//название сбора
+    private final Calendar fundraisingExpire;//дата окончания сбора
+    private final double currentFundSum;//текущий сбор
     @OneToMany
-    private List<Transaction> transactionList;//список транзакций
+    private final List<Transaction> transactionList;//список транзакций
 
-    public List<Transaction> getTransactionList() { return transactionList; }
+    public List<Transaction> getTransactionList() {
+        return transactionList;
+    }
 
-    public long getFundraisingId () {
+    public long getFundraisingId() {
         return fundraisingId;
     }
 
-    public Fundraising(long fundraisingId,double goal,boolean isGoalAllowed,String fundraisingName,Calendar fundraisingExpire,ArrayList<Transaction> transactionList,double currentFundSumm) {
+    public Fundraising(long fundraisingId, double goal, boolean isGoalAllowed, String fundraisingName,
+                       Calendar fundraisingExpire, List<Transaction> transactionList, double currentFundSum) {
         this.fundraisingId = fundraisingId;
         this.goal = goal;
         this.isGoalAllowed = isGoalAllowed;
         this.fundraisingName = fundraisingName;
         this.fundraisingExpire = fundraisingExpire;
         this.transactionList = transactionList;
-        this.currentFundSumm = currentFundSumm;
+        this.currentFundSum = currentFundSum;
     }
 
     protected Fundraising() {
-
+        this.fundraisingId = 0;
+        this.goal = 0.;
+        this.isGoalAllowed = false;
+        this.fundraisingName = "fundraisingName";
+        this.fundraisingExpire = Calendar.getInstance();
+        this.transactionList = new ArrayList<>();
+        this.currentFundSum = 0.;
     }
 }

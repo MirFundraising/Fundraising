@@ -24,23 +24,32 @@ public class Cluster implements IdGettable {
     private double goal;
     @OneToMany
     private List<User> users;
-
     @OneToMany
     private List<Fundraising> fundraisings;//список сборов кластера
 
-    public void addUser(User user) { users.add(user); }
+    public List<Fundraising> getFundraisings() {
+        return fundraisings;
+    }
 
-    public String getClusterName() { return name; }
+    public void setFundraisings(List<Fundraising> fundraisings) {
+        this.fundraisings = fundraisings;
+    }
 
-    public List<Fundraising> getFundraisings() { return fundraisings; }
+    public void addUser(User user) {
+        users.add(user);
+    }
 
-    public void setFundraisings(List<Fundraising> fundraisings) { this.fundraisings = fundraisings; }
+    public String getClusterName() {
+        return name;
+    }
 
     public List<User> getUsers() {
         return users;
     }
 
-    public void setUsers(List<User> users) { this.users = users; }
+    public void setUsers(List<User> users) {
+        this.users = users;
+    }
 
     public int getParticipantCounter() {
         return participantCounter;
@@ -79,5 +88,6 @@ public class Cluster implements IdGettable {
         this.name = name;
         this.participantCounter = participantCounter;
         this.users = users;
+        this.goal = goal;
     }
 }
