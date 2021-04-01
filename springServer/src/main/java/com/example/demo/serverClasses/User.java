@@ -59,11 +59,13 @@ public class User implements IdGettable {
         return telephoneNumber;
     }
 
-    public void addUserCard(CreditCard card){
+    public void addUserCard(CreditCard card) {
         userCards.add(card);
     }
 
-    public List<CreditCard> getUserCards() { return userCards; }
+    public List<CreditCard> getUserCards() {
+        return userCards;
+    }
 
     public User(String name, String surname, String birthDate,
                 String email, String telephoneNumber, String password, double balance) {
@@ -82,7 +84,7 @@ public class User implements IdGettable {
     }
 
     public void addCardToCluster(Cluster cluster, String cardNumber, String cardHolderSurname,
-                    String cardHolderName, Date cardExpire, int cvcCode) {
+                                 String cardHolderName, Date cardExpire, int cvcCode) {
         try {
             List<User> users = cluster.getUsers();
             User user = getUser(cluster, cardNumber, cardHolderSurname, cardHolderName, cardExpire, cvcCode);
@@ -104,10 +106,10 @@ public class User implements IdGettable {
             List<CreditCard> cards = users.get(i).getUserCards();
             for (int j = 0; j < cards.size(); j++) {
                 if (cards.get(j).getCardNumber() == cardNumber &&
-                cards.get(j).getCardHolderSurname() == cardHolderSurname &&
-                cards.get(j).getCardHolderName() == cardHolderName &&
-                cards.get(j).getCardExpire() == cardExpire &&
-                cards.get(j).getCvcCode() == cvcCode) {
+                        cards.get(j).getCardHolderSurname() == cardHolderSurname &&
+                        cards.get(j).getCardHolderName() == cardHolderName &&
+                        cards.get(j).getCardExpire() == cardExpire &&
+                        cards.get(j).getCvcCode() == cvcCode) {
                     return users.get(i);
                 }
             }
