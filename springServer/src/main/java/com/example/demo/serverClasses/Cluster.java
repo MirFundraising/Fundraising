@@ -28,11 +28,18 @@ public class Cluster implements IdGettable {
     @OneToMany
     private List<Fundraising> fundraisings;//список сборов кластера
 
+    public void addUser(User user) { users.add(user); }
+
+    public String getClusterName() { return name; }
+
     public List<Fundraising> getFundraisings() { return fundraisings; }
+
     public void setFundraisings(List<Fundraising> fundraisings) { this.fundraisings = fundraisings; }
+
     public List<User> getUsers() {
         return users;
     }
+
     public void setUsers(List<User> users) { this.users = users; }
 
     public int getParticipantCounter() {
