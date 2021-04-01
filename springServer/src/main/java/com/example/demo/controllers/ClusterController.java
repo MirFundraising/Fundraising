@@ -12,11 +12,12 @@ public class ClusterController {
     @GetMapping
     public List<Cluster> getUserClusterList(){
         //TODO ПОЛУЧАТЬ СПИСОК КЛАСТЕРОВ ЮЗЕРА ИЗ БД И ВОЗВРАЩАТЬ ИХ
+        return null;
     }
     @GetMapping("{name}")
     public Cluster getUserClusterByClusterName(String clusterName){
         //TODO ПОЛУЧАТЬ КЛАСТЕР ЮЗЕРА ПО НАЗВАНИ КЛАСТЕРА ИЗ БД И ВОЗВРАЩАТЬ ЕГО
-
+        return  null;
     }
     @PostMapping
     public Cluster createNewUserCluster(@RequestBody Cluster cluster){
@@ -29,5 +30,6 @@ public class ClusterController {
         //TODO ДОБАВЛЯТЬ НОВОГО ЮЗЕРА В КЛАСТЕР ПО НОМЕРУ ТЕЛЕФОНА ЮЗЕРА (У НАС УЖЕ ЕСТЬ КЛАСТЕР,
         // МЫ ПРОСТО ОБНОВЛЯЕМ ЕГО ДАННЫЕ
         // ПОЭТОМУ И PUT ЗАПРОС)
+        return null;
     }
 }

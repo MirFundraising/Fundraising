@@ -1,24 +1,37 @@
 package com.example.demo.serverClasses;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.ArrayList;
+import java.util.List;
 
+@Entity
 public class Cluster implements IdGettable {
+    protected Cluster() {
+
+    }
+
     @Override
     public long getId() {
         return 0; //TODO
     }
 
+    @Id
     private long clusterId;
     private String name;
     private int participantCounter;
     private double goal;
-    private ArrayList<User> users;
-    private ArrayList<Fundraising> fundraisings;//список сборов кластера
+    @OneToMany
+    private List<User> users;
 
-    public ArrayList<User> getUsers() {
+    @OneToMany
+    private List<Fundraising> fundraisings;//список сборов кластера
+
+    public List<User> getUsers() {
         return users;
     }
-    public void setUsers(ArrayList<User> users) { this.users = users; }
+    public void setUsers(List<User> users) { this.users = users; }
 
     public int getParticipantCounter() {
         return participantCounter;
@@ -52,7 +65,7 @@ public class Cluster implements IdGettable {
         this.clusterId = clusterId;
     }
 
-    public Cluster(String name, int participantCounter, double goal, ArrayList<User> users) {
+    public Cluster(String name, int participantCounter, double goal, List<User> users) {
         clusterId = getId();
         this.name = name;
         this.participantCounter = participantCounter;

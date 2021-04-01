@@ -12,14 +12,17 @@ public class UserController {
     @GetMapping
     public List<User> getClusterUsers(){
         //TODO ПОЛУЧАТЬ ВСЕХ УЧАСТНИКОВ КЛАСТЕРА И ВОЗВРАЩАТЬ ИХ
+        return null;
     }
     @GetMapping("{phone}")
     public User getCurrentUser(@PathVariable String phone){
         //TODO ПОЛУЧАТЬ ПОЛЬЗОВАТЕЛЯ ПО НОМЕРУ ТЕЛЕФОНА, ПОДХОДИТ КАК ПОЛУЧЕНИЯ ТЕКУЩЕГО ПОЛЬЗОВАТЕЛЯ
         //TODO В АТОРИЗАЦИИ, ТАК И ДЛЯ ДОБАВЛЕНИЯ ПОЛЬЗОВАТЕЛЯ В НОВЫЙ КЛАСТЕР
+        return null;
     }
     @PostMapping
     public User createNewUser(){
         //TODO СОЗДАНИЕ И ДОБАВЛЕНИЕ НОВОГО ПОЛЬЗОВАТЕЛЯ В БД И ВОЗВРАТ ЕГО ЕСЛИ ВСЕ ОК
+        return null;
     }
 }

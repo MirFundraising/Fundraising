@@ -1,28 +1,39 @@
 package com.example.demo.serverClasses;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
+import javax.persistence.*;
+import java.util.*;
 
 @Entity
 public class User implements IdGettable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long memberId; //номер клиента в базе данных
+    private final Long memberId; //номер клиента в базе данных
 
-    private String name;//имя клиента
-    private String surname;//фамилия клиента
-    private String birthDate;//дата рождения
-    private String email;//email
-    private String telephoneNumber;//телефонный номер
-    private ArrayList<Cluster> clusters;
-    private HashMap<Long, Permission> userPermissionOnClusterId;
-    private ArrayList<CreditCard> userCards=new ArrayList<>();
+    private final String name;//имя клиента
+    private final String surname;//фамилия клиента
+    private final String birthDate;//дата рождения
+    private final String email;//email
+    private final String telephoneNumber;//телефонный номер
+
+    @OneToMany
+    private final List<Cluster> clusters;
+    @ElementCollection
+    private final Map<Long, Permission> userPermissionOnClusterId;
+    @OneToMany
+    private final List<CreditCard> userCards;
+
+    protected User() {
+        memberId = getId();
+        this.name = "";
+        this.surname = "";
+        this.birthDate = "";
+        this.email = "";
+        this.telephoneNumber = "";
+        clusters = new ArrayList<>();
+        userCards = new ArrayList<>();
+        userPermissionOnClusterId = new HashMap<>();
+    }
 
     public Long getMemberId() {
         return memberId;
@@ -52,7 +63,7 @@ public class User implements IdGettable {
         userCards.add(card);
     }
 
-    public ArrayList<CreditCard> getUserCards() { return userCards; }
+    public List<CreditCard> getUserCards() { return userCards; }
 
     public User(String name, String surname, String birthDate,
                 String email, String telephoneNumber, String password, double balance) {
@@ -65,12 +76,15 @@ public class User implements IdGettable {
         this.birthDate = birthDate;
         this.email = email;
         this.telephoneNumber = telephoneNumber;
+        clusters = new ArrayList<>();
+        userCards = new ArrayList<>();
+        userPermissionOnClusterId = new HashMap<>();
     }
 
     public void addCardToCluster(Cluster cluster, String cardNumber, String cardHolderSurname,
                     String cardHolderName, Date cardExpire, int cvcCode) {
         try {
-            ArrayList<User> users = cluster.getUsers();
+            List<User> users = cluster.getUsers();
             User user = getUser(cluster, cardNumber, cardHolderSurname, cardHolderName, cardExpire, cvcCode);
             if (user == null)
                 throw new RuntimeException();
@@ -85,9 +99,9 @@ public class User implements IdGettable {
 
     private User getUser(Cluster cluster, String cardNumber, String cardHolderSurname,
                          String cardHolderName, Date cardExpire, int cvcCode) {
-        ArrayList<User> users = cluster.getUsers();
+        List<User> users = cluster.getUsers();
         for (int i = 0; i < users.size(); i++) {
-            ArrayList<CreditCard> cards = users.get(i).getUserCards();
+            List<CreditCard> cards = users.get(i).getUserCards();
             for (int j = 0; j < cards.size(); j++) {
                 if (cards.get(j).getCardNumber() == cardNumber &&
                 cards.get(j).getCardHolderSurname() == cardHolderSurname &&
