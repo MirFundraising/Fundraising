@@ -1,9 +1,5 @@
 package com.example.demo.database;
 
-import java.time.Instant;
-import java.util.Calendar;
-import java.util.Date;
-
 public class Const {
     public static final String USER_TABLE = "user";
     public static final String USERS_ID = "idUser";
