@@ -12,6 +12,7 @@ public class User {
     private java.sql.Date birthDate;//дата рождения
     private String email;//email
     private String telephoneNumber;//телефонный номер
+
     private Double balance=0.0;// баланс пользователя
     private ArrayList<Cluster> clusters=new ArrayList<>();
     private HashMap<Long, Permission> userPermissionOnClusterId=new HashMap<>();
@@ -62,11 +63,23 @@ public class User {
     public void addUserCard(CreditCard card){
         userCards.add(card);
     }
+
     public User(String name, String surname, java.sql.Date birthDate, String email, String telephoneNumber) {
         this.name = name;
         this.surname = surname;
         this.birthDate = birthDate;
         this.email = email;
         this.telephoneNumber = telephoneNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", birthDate=" + birthDate +
+                ", email='" + email + '\'' +
+                ", telephoneNumber='" + telephoneNumber + '\'' +
+                '}';
     }
 }

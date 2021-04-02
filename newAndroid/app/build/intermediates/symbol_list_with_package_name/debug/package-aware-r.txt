@@ -1471,6 +1471,7 @@ drawable ic_wavecluster
 drawable ic_wavefundraising
 drawable ic_waveinsidef
 drawable ic_wavenew
+drawable mir_card_banner
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1594,6 +1595,8 @@ id cancel_action
 id cancel_button
 id cant_auth_login_text
 id cardView
+id card_balance
+id card_row_constrained
 id card_spinner
 id center
 id center_horizontal
@@ -1613,9 +1616,9 @@ id chronometer
 id clear_text
 id clip_horizontal
 id clip_vertical
-id cluster_money_summ_text
 id cluster_name_text
 id cluster_output_number_text
+id cluster_row_layout
 id cluster_users_recycler
 id collapseActionView
 id confirm_button
@@ -1711,6 +1714,7 @@ id join_text
 id join_time
 id labeled
 id largeLabel
+id last_card_digits
 id left
 id light
 id line1
@@ -1725,6 +1729,7 @@ id members_count_text
 id message
 id middle
 id mini
+id mir_card_pick
 id mobile_navigation
 id month_grid
 id month_navigation_bar
@@ -1863,9 +1868,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
-id textView10
 id textView11
-id textView12
 id textView14
 id textView2
 id textView3
@@ -1986,6 +1989,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_new_cluster
+layout activity_card_row
 layout activity_create_new_fundraising
 layout activity_inside_cluster_activity
 layout activity_inside_fundraising

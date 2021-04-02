@@ -22,6 +22,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MirAnd" >
+        <activity android:name="com.example.mirand.card_row" />
         <activity android:name="com.example.mirand.ui.insides.InsideFundraisingActivity" />
         <activity android:name="com.example.mirand.ui.adds.create_new_fundraising" />
         <activity android:name="com.example.mirand.ui.insides.inside_cluster_activity" />
