@@ -1,4 +1,3 @@
-/*
 package com.example.demo.serverClasses;
 
 import javax.persistence.*;
@@ -132,4 +131,3 @@ public class User implements IdGettable {
     }
 
 }
-*/

@@ -1,4 +1,3 @@
-/*
 package com.example.demo.serverClasses;
 
 import javax.persistence.Entity;
@@ -64,4 +63,3 @@ public class Fundraising {
         this.currentFundSum = 0.;
     }
 }
-*/

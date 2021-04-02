@@ -2,7 +2,7 @@ package com.example.demo.controllers;
 
 import com.example.demo.database.DatabaseHandler;
 import com.example.demo.serverClasses.CreditCard;
-//import com.example.demo.serverClasses.User;
+import com.example.demo.serverClasses.User;
 import com.sun.xml.bind.v2.TODO;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +17,6 @@ import java.util.*;
 @RequestMapping("cards")
 public class CardController{
     DatabaseHandler databaseHandler = new DatabaseHandler();
-/*
     @GetMapping
     public List<CreditCard> getUserCardList(@RequestBody User user){
         return user.getUserCards(); //тут должен возвращаться список карт
@@ -33,7 +32,7 @@ public class CardController{
         catch (Exception e) {
             return null;
         }
-    }*/
+    }
 
     @GetMapping("add")
     public String addNewUserCard(){
