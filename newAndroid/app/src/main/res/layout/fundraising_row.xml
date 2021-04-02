@@ -38,24 +38,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/fundraising_row_goal_text" />
 
             <TextView
-                android:id="@+id/fundraising_row_your_fundraising_text"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/white_borders"
-                android:text="  Ваш вклад в сбор:"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/fundraising_row_current_fundraising_text" />
-
-            <TextView
                 android:id="@+id/funraising_row_name_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

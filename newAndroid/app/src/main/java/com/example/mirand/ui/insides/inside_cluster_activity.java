@@ -1,6 +1,7 @@
 package com.example.mirand.ui.insides;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -11,6 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.mirand.R;
+import com.example.mirand.adapters.ClusterFundsRecycler;
 import com.example.mirand.ui.adds.create_new_fundraising;
 import com.example.mirand.util.Cluster;
 import com.example.mirand.util.Permission;
@@ -21,6 +23,7 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 
 public class inside_cluster_activity extends AppCompatActivity {
+    private Cluster cluster;
     private TextView clusterName;
     private TextView clusterRole;
     private RecyclerView fundraisings;
@@ -39,6 +42,14 @@ public class inside_cluster_activity extends AppCompatActivity {
         users= (RecyclerView)findViewById(R.id.cluster_users_recycler);
         getData();
         setData();
+        String[] names= (String[]) cluster.getFundraisings().stream().map(fundraising -> fundraising.getFundraisingName()).toArray();
+        String[] remainTime= (String[]) cluster.getFundraisings().stream().map(fundraising -> fundraising.getFundraisingExpire()).toArray();
+        Double[] goalSumm= (Double[]) cluster.getFundraisings().stream().map(fundraising -> fundraising.getGoal()).toArray();
+        Double[] currentSumm= (Double[]) cluster.getFundraisings().stream().map(fundraising -> fundraising.getCurrentFundSum()).toArray();
+
+        ClusterFundsRecycler recycler=new ClusterFundsRecycler(this,names,remainTime,goalSumm,currentSumm);
+        fundraisings.setAdapter(recycler);
+        fundraisings.setLayoutManager(new LinearLayoutManager(this));
     }
     public void addNewMember(View view){
         startActivity(new Intent());
@@ -54,6 +65,7 @@ public class inside_cluster_activity extends AppCompatActivity {
     }
     private void setData(){
         clusterName.setText(name);
-        clusterRole.setText(clusterRole.getText()+permission);
+        String perm=clusterRole.getText().toString();
+        clusterRole.setText(perm+permission);
     }
 }

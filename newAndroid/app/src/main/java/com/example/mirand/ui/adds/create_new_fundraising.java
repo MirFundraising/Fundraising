@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.format.DateUtils;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 
 import com.example.mirand.R;
+import com.example.mirand.ui.insides.InsideFundraisingActivity;
 import com.example.mirand.ui.insides.inside_cluster_activity;
 import com.example.mirand.util.Cluster;
 import com.example.mirand.util.Fundraising;
@@ -85,8 +87,11 @@ public class create_new_fundraising extends AppCompatActivity {
             if (!fundraisingSummary.getText().toString().isEmpty()) {
                 mGoal = Long.getLong(fundraisingSummary.getText().toString());
                 if (mGoal>0&&mGoal<1000000){
-                    fundraising=new Fundraising(mGoal,true,mName,dateAndTime);
+                    fundraising=new Fundraising(mGoal,true,mName,dateAndTime,0.0);
                     cluster.addFundraising(fundraising);
+                    Intent intent=new Intent(this, InsideFundraisingActivity.class);
+                    startActivity(intent);
+                    this.finish();
                 }
             }
         }

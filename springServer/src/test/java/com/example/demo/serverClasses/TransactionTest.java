@@ -34,10 +34,4 @@ class TransactionTest {
     void getTransactionTime() {
         assertEquals(transaction.getTransactionTime(), now);
     }
-
-    @Test
-    void setAndGetId() {
-        transaction.setId(id);
-        assertEquals(transaction.getId(), id);
-    }
 }
