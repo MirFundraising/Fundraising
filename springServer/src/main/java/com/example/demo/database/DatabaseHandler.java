@@ -50,5 +50,38 @@ public class DatabaseHandler extends Configs {
             throwables.printStackTrace();
         }
     }
+
+    public ResultSet getUser(User user) {
+        ResultSet rs = null;
+
+        String select = "SELECT * FROM " + Const.USER_TABLE + " WHERE " +
+                Const.USER_EMAIL + "=? AND " + Const.USER_PHONE + "=?";
+
+        try {
+            PreparedStatement preparedStatement = getDbConnection().prepareStatement(select);
+            preparedStatement.setString(1, user.getEmail());
+            preparedStatement.setString(2, user.getTelephoneNumber());
+            rs = preparedStatement.executeQuery();
+        } catch (SQLException | ClassNotFoundException throwables) {
+            throwables.printStackTrace();
+        }
+        return  rs;
+    }
+
+    public ResultSet getCluster(Cluster cluster) {
+        ResultSet rs = null;
+
+        String select = "SELECT * FROM " + Const.CLUSTER_TABLE + " WHERE " +
+                Const.CLUSTER_NAME + "=?";
+
+        try {
+            PreparedStatement preparedStatement = getDbConnection().prepareStatement(select);
+            preparedStatement.setString(1, cluster.getClusterName());
+            rs = preparedStatement.executeQuery();
+        } catch (SQLException | ClassNotFoundException throwables) {
+            throwables.printStackTrace();
+        }
+        return  rs;
+    }
 }
 
