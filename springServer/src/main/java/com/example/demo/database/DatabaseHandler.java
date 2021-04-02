@@ -15,11 +15,10 @@ public class DatabaseHandler extends Configs {
         dbConnection = DriverManager.getConnection(connectionString, dbUser, dbPass);
         return dbConnection;
     }
-/*
     // Добавление в базу данных user'a
     public void signUpUser(User user) {
         String insert = "INSERT INTO " + Const.USER_TABLE + "(" + Const.USER_NAME + "," + Const.USER_SURNAME + "," +
-                Const.USER_EMAIL + "," + Const.USER_BIRTHDATE + *//*"," + Const.USER_BALANCE + "," + Const.USER_PHONE +*//* ")" +
+                Const.USER_EMAIL + "," + Const.USER_BIRTHDATE + /*"," + Const.USER_BALANCE + "," + Const.USER_PHONE +*/ ")" +
                 "VALUES(?,?,?,?)";
 
         try {
@@ -82,7 +81,6 @@ public class DatabaseHandler extends Configs {
         }
         return  rs;
     }
-*/
     public void createCreditCard(CreditCard creditCard) {
         String insert = "INSERT INTO " + Const.CARD_TABLE + " (" + Const.CARD_NUMBER + "," +
                 Const.CARD_EXPIRE + "," + Const.CARD_HOLDER_NAME + "," + Const.CARD_HOLDER_SURNAME + "," + Const.CARD_CVC + ")" +
@@ -116,7 +114,7 @@ public class DatabaseHandler extends Configs {
         }
         return  rs;
     }
-/*
+
     public void createFundraising(Fundraising fundraising) {
         String insert = "INSERT INTO" + Const.FUNDRAISING_TABLE + "(" + Const.FUNDRAISING_NAME + "," +
                 Const.FUNDRAISING_EXPIRE + "," + Const.FUNDRAISING_GOAL + "," +
@@ -182,6 +180,6 @@ public class DatabaseHandler extends Configs {
             throwables.printStackTrace();
         }
         return  rs;
-    }*/
+    }
 }
 
