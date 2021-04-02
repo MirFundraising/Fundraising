@@ -14,7 +14,6 @@ public class Transaction {
     private String transactionSum;//сумма транзакции
     private final String transactionCode = "28";//код транзакции всегда 28
     private Instant transactionTime;//дата и время транзакции
-    private String id;
 
     public String getTransactionCode() { return transactionCode; }
 
@@ -59,15 +58,6 @@ public class Transaction {
 
     public Transaction() {
 
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    @Id
-    public String getId() {
-        return id;
     }
 }
 */

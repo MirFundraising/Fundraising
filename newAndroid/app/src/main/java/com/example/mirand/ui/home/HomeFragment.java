@@ -1,5 +1,6 @@
 package com.example.mirand.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.mirand.R;
 import com.example.mirand.adapters.UserCardRecycler;
 import com.example.mirand.adapters.UserClustersRecycler;
+import com.example.mirand.ui.adds.add_new_cluster;
 import com.example.mirand.util.Cluster;
 import com.example.mirand.util.Permission;
 import com.example.mirand.util.User;
@@ -72,6 +74,14 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 
+            }
+        });
+        addCluster.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getContext(), add_new_cluster.class);
+                startActivity(intent);
+
             }
         });
         return root;
