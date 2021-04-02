@@ -14,6 +14,8 @@ public class Transaction {
     private final String transactionCode = "28";//код транзакции всегда 28
     private Instant transactionTime;//дата и время транзакции
 
+    public String getTransactionCode() { return transactionCode; }
+
     public long getTransactionId() {
         return transactionId;
     }

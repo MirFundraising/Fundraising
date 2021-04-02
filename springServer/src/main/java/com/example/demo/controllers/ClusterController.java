@@ -1,5 +1,6 @@
 package com.example.demo.controllers;
 
+import com.example.demo.database.DatabaseHandler;
 import com.example.demo.serverClasses.Cluster;
 import com.example.demo.serverClasses.User;
 import org.springframework.web.bind.annotation.*;
@@ -9,8 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("cluster")
 public class ClusterController {
-    // в силу того, что БД не до конца реализована, я не могу наладить связь с БД,
-    // поэтому написал методы как мог
+    DatabaseHandler databaseHandler = new DatabaseHandler();
     @GetMapping
     public List<Cluster> getUserClusterList(@RequestBody User user){
         //ПОЛУЧАТЬ СПИСОК КЛАСТЕРОВ ЮЗЕРА ИЗ БД И ВОЗВРАЩАТЬ ИХ

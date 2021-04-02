@@ -9,10 +9,10 @@ import java.util.Date;
 public class CreditCard {
     @Id
     private long cardId;
-    private final String cardNumber;
-    private final Date cardExpire;
-    private final String cardHolderName;
-    private final String cardHolderSurname;
+    private String cardNumber;
+    private Date cardExpire;
+    private String cardHolderName;
+    private String cardHolderSurname;
     private final int cvcCode;
 
     public CreditCard(String cardNumber, Date cardExpire, String cardHolderName, String cardHolderSurname, int cvcCode) {
@@ -23,13 +23,21 @@ public class CreditCard {
         this.cvcCode = cvcCode;
     }
 
-    protected CreditCard() {
+    public CreditCard() {
         cardNumber = "";
         cardExpire = Date.from(Instant.now());
         cardHolderName = "";
         cardHolderSurname = "";
         cvcCode = 666;
     }
+
+    public void setCardHolderSurname(String surname) { cardHolderSurname = surname; }
+
+    public void setCardHolderName(String name) { cardHolderName = name; }
+
+    public void setCardExpire(Date cardExpire) { this.cardExpire = cardExpire; }
+
+    public void setCardNumber(String cardNumber) { this.cardNumber = cardNumber; }
 
     public String getCardNumber() {
         return cardNumber;

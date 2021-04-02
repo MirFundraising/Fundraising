@@ -1,8 +1,9 @@
+com/example/mirand/controllers/CardController.java
+ com.example.mirand.controllers.CardController
+com/example/mirand/controllers/UserAPI.java
+ com.example.mirand.controllers.UserAPI
 com/example/mirand/ui/insides/inside_cluster_activity.java
  com.example.mirand.ui.insides.inside_cluster_activity
-com/example/mirand/adapters/MyRecyclerViewAdapter.java
- com.example.mirand.adapters.MyRecyclerViewAdapter
- com.example.mirand.adapters.MyRecyclerViewAdapter$MyViewHolder
 com/example/mirand/ui/intro/activity_login.java
  com.example.mirand.ui.intro.activity_login
  com.example.mirand.ui.intro.activity_login$1
@@ -12,6 +13,8 @@ com/example/mirand/ui/intro/activity_login.java
  com.example.mirand.ui.intro.activity_login$3$1
 com/example/mirand/util/Fundraising.java
  com.example.mirand.util.Fundraising
+com/example/mirand/controllers/TransactionController.java
+ com.example.mirand.controllers.TransactionController
 com/example/mirand/ui/intro/activity_register.java
  com.example.mirand.ui.intro.activity_register
  com.example.mirand.ui.intro.activity_register$1
@@ -43,6 +46,13 @@ com/example/mirand/BuildConfig.java
  com.example.mirand.BuildConfig
 com/example/mirand/util/Permission.java
  com.example.mirand.util.Permission
+com/example/mirand/controllers/UserController.java
+ com.example.mirand.controllers.UserController
+ com.example.mirand.controllers.UserController$1
+com/example/mirand/adapters/UserClustersRecycler.java
+ com.example.mirand.adapters.UserClustersRecycler
+ com.example.mirand.adapters.UserClustersRecycler$1
+ com.example.mirand.adapters.UserClustersRecycler$MyViewHolder
 com/example/mirand/ui/insides/InsideFundraisingActivity.java
  com.example.mirand.ui.insides.InsideFundraisingActivity
 com/example/mirand/database/Configs.java
@@ -51,14 +61,26 @@ com/example/mirand/ui/dashboard/DashboardViewModel.java
  com.example.mirand.ui.dashboard.DashboardViewModel
 com/example/mirand/ui/notifications/NotificationsViewModel.java
  com.example.mirand.ui.notifications.NotificationsViewModel
+com/example/mirand/controllers/FundraisingController.java
+ com.example.mirand.controllers.FundraisingController
+com/example/mirand/adapters/UserCardRecycler.java
+ com.example.mirand.adapters.UserCardRecycler
+ com.example.mirand.adapters.UserCardRecycler$1
+ com.example.mirand.adapters.UserCardRecycler$MyViewHolder
+com/example/mirand/card_row.java
+ com.example.mirand.card_row
 com/example/mirand/dialog_fragment_edit_new_card.java
  com.example.mirand.dialog_fragment_edit_new_card
+com/example/mirand/controllers/ClusterController.java
+ com.example.mirand.controllers.ClusterController
 com/example/mirand/util/CreditCard.java
  com.example.mirand.util.CreditCard
 com/example/mirand/database/DBHandler.java
  com.example.mirand.database.DBHandler
 com/example/mirand/ui/home/HomeViewModel.java
  com.example.mirand.ui.home.HomeViewModel
+com/example/mirand/util/Transaction.java
+ com.example.mirand.util.Transaction
 com/example/mirand/util/Cluster.java
  com.example.mirand.util.Cluster
 com/example/mirand/ui/dashboard/DashboardFragment.java

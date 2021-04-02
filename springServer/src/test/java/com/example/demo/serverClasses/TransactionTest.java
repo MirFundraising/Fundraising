@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TransactionTest {
 
+    private final String transactionCode = "28";//код транзакции всегда 28
     private final long transactionId = 666L;
     private final String transactionType = "0100";//тип запроса 0100
     private final String transactionSum = "666";
