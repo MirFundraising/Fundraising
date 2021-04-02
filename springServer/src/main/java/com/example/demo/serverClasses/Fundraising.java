@@ -21,6 +21,16 @@ public class Fundraising {
     @OneToMany
     private List<Transaction> transactionList;//список транзакций
 
+    public String getFundraisingName() { return fundraisingName; }
+
+    public Calendar getFundraisingExpire() { return fundraisingExpire; }
+
+    public double getGoal() { return goal; }
+
+    public double getCurrentFundSum() { return currentFundSum; }
+
+    public boolean isGoalAllowed() { return isGoalAllowed;}
+
     public void setTransactionList(List<Transaction> transactions) {
         transactionList = transactions;
     }

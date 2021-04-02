@@ -6,6 +6,7 @@ import java.time.Instant;
 
 @Entity
 public class Transaction {
+    @Id
     private long transactionId;//номер транзакции именно наш для бд
 
     private String transactionType = "0100";//тип запроса 0100
@@ -13,6 +14,8 @@ public class Transaction {
     private final String transactionCode = "28";//код транзакции всегда 28
     private Instant transactionTime;//дата и время транзакции
     private String id;
+
+    public String getTransactionCode() { return transactionCode; }
 
     public long getTransactionId() {
         return transactionId;

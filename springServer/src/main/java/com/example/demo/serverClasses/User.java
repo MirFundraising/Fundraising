@@ -23,7 +23,7 @@ public class User implements IdGettable {
     @OneToMany
     private final List<CreditCard> userCards;
 
-    protected User() {
+    public User() {
         memberId = getId();
         this.name = "";
         this.surname = "";
