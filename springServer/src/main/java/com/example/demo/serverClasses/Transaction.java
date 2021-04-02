@@ -1,3 +1,4 @@
+/*
 package com.example.demo.serverClasses;
 
 import javax.persistence.Entity;
@@ -69,3 +70,4 @@ public class Transaction {
         return id;
     }
 }
+*/

@@ -2,7 +2,7 @@ package com.example.demo.controllers;
 
 import com.example.demo.database.DatabaseHandler;
 import com.example.demo.serverClasses.CreditCard;
-import com.example.demo.serverClasses.User;
+//import com.example.demo.serverClasses.User;
 import com.sun.xml.bind.v2.TODO;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,10 +14,10 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 @RestController
-@RequestMapping("card")
+@RequestMapping("cards")
 public class CardController{
     DatabaseHandler databaseHandler = new DatabaseHandler();
-
+/*
     @GetMapping
     public List<CreditCard> getUserCardList(@RequestBody User user){
         return user.getUserCards(); //тут должен возвращаться список карт
@@ -33,7 +33,20 @@ public class CardController{
         catch (Exception e) {
             return null;
         }
+    }*/
+
+    @GetMapping("add")
+    public String addNewUserCard(){
+        // обработка добавления новой карты в таблицу карт в бд
+        try {
+            databaseHandler.createCreditCard(new CreditCard());
+            return "added";
+        }
+        catch (Exception e) {
+            return null;
+        }
     }
+
     @GetMapping("{creditCardNumber}")
     public CreditCard getUserCardById(@PathVariable String creditCardNumber/*, @RequestBody User user*/) throws SQLException {
         // получать по номеру карты конкретную карту из бд и возвращать ее

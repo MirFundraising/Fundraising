@@ -1,3 +1,4 @@
+/*
 package com.example.demo.serverClasses;
 
 import javax.persistence.Entity;
@@ -91,3 +92,4 @@ public class Cluster implements IdGettable {
         this.goal = goal;
     }
 }
+*/

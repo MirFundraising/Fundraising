@@ -1,3 +1,4 @@
+/*
 package com.example.demo.serverClasses;
 
 import javax.persistence.*;
@@ -12,9 +13,9 @@ public class User implements IdGettable {
 
     private final String name;//имя клиента
     private final String surname;//фамилия клиента
-    private final String birthDate;//дата рождения
+    private final String birthdate;//дата рождения
     private final String email;//email
-    private final String telephoneNumber;//телефонный номер
+    private final String telephone;//телефонный номер
 
     @OneToMany
     private final List<Cluster> clusters;
@@ -27,9 +28,9 @@ public class User implements IdGettable {
         memberId = getId();
         this.name = "";
         this.surname = "";
-        this.birthDate = "";
+        this.birthdate = "";
         this.email = "";
-        this.telephoneNumber = "";
+        this.telephone = "";
         clusters = new ArrayList<>();
         userCards = new ArrayList<>();
         userPermissionOnClusterId = new HashMap<>();
@@ -47,16 +48,16 @@ public class User implements IdGettable {
         return surname;
     }
 
-    public String getBirthDate() {
-        return birthDate;
+    public String getBirthdate() {
+        return birthdate;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public String getTelephoneNumber() {
-        return telephoneNumber;
+    public String getTelephone() {
+        return telephone;
     }
 
     public void addUserCard(CreditCard card) {
@@ -75,17 +76,17 @@ public class User implements IdGettable {
         clusters.add(cluster);
     }
 
-    public User(String name, String surname, String birthDate,
-                String email, String telephoneNumber, String password, double balance) {
+    public User(String name, String surname, String birthdate,
+                String email, String telephone, String password, double balance) {
         memberId = getId();
         if (name.isEmpty() || name == null) {
 
         }
         this.name = name;
         this.surname = surname;
-        this.birthDate = birthDate;
+        this.birthdate = birthdate;
         this.email = email;
-        this.telephoneNumber = telephoneNumber;
+        this.telephone = telephone;
         clusters = new ArrayList<>();
         userCards = new ArrayList<>();
         userPermissionOnClusterId = new HashMap<>();
@@ -131,3 +132,4 @@ public class User implements IdGettable {
     }
 
 }
+*/
