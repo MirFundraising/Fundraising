@@ -14,9 +14,11 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mirand.R;
+import com.example.mirand.adapters.UserCardRecycler;
 import com.example.mirand.adapters.UserClustersRecycler;
 import com.example.mirand.util.Cluster;
 import com.example.mirand.util.Permission;
@@ -50,9 +52,22 @@ public class HomeFragment extends Fragment {
         addCluster=(ImageView)root.findViewById(R.id.add_new_cluster_image);
         clusterRecycler=(RecyclerView)root.findViewById(R.id.main_user_cluster_recycler);
         cardRecycler=(RecyclerView)root.findViewById(R.id.main_user_cards_recycler);
+
         String[] clusterNames= (String[]) user.getClusters().stream().map(getClustersName).toArray();
-        Permission[] permissions= (Permission[]) user.getUserPermissionOnClusterId().
-        UserClustersRecycler userClustersRecycler=new UserClustersRecycler(this,clusterNames,);
+        Permission[] permissions= (Permission[]) user.getUserPermissionOnClusterId().values().toArray();
+        Integer[] membersCounter= (Integer[]) user.getClusters().stream().map(cluster -> cluster.getUsers().stream().count()).toArray();
+        String[] cards= (String[]) user.getUserCards().stream().map(card -> card.getCardNumber()).toArray();//это не то
+
+        UserClustersRecycler userClustersRecycler=new UserClustersRecycler(this.getContext(),clusterNames,permissions,membersCounter,cards);
+        clusterRecycler.setAdapter(userClustersRecycler);
+        clusterRecycler.setLayoutManager(new LinearLayoutManager(this.getContext()));
+
+        String[] card4Digits= (String[]) user.getUserCards().stream().map(card -> card.getCardNumber().substring(card.getCardNumber().length()-4)).toArray();
+        String[] balances=new String[4];
+
+        UserCardRecycler userCardRecycler=new UserCardRecycler(this.getContext(),card4Digits,balances);
+        cardRecycler.setAdapter(userCardRecycler);
+        cardRecycler.setLayoutManager(new LinearLayoutManager(this.getContext()));
         addCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

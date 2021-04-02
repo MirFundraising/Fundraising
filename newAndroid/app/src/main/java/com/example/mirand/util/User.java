@@ -17,6 +17,10 @@ public class User {
     private HashMap<Long, Permission> userPermissionOnClusterId=new HashMap<>();
     private ArrayList<CreditCard> userCards=new ArrayList<>();
 
+    public ArrayList<CreditCard> getUserCards() {
+        return userCards;
+    }
+
     public Long getMemberId() {
         return memberId;
     }

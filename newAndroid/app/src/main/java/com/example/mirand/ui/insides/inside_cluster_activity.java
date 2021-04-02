@@ -25,8 +25,9 @@ public class inside_cluster_activity extends AppCompatActivity {
     private TextView clusterRole;
     private RecyclerView fundraisings;
     private RecyclerView users;
-    private Cluster cluster;
     private ArrayList<User> members;
+    private String name;
+    private String permission;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,13 +37,23 @@ public class inside_cluster_activity extends AppCompatActivity {
         clusterRole= (TextView)findViewById(R.id.inside_cluster_role_text);
         fundraisings= (RecyclerView)findViewById(R.id.fundraising_recycler);
         users= (RecyclerView)findViewById(R.id.cluster_users_recycler);
-        clusterName.setText(cluster.getName());
-        clusterRole.setText(Permission.Administrator.toString());
+        getData();
+        setData();
     }
     public void addNewMember(View view){
         startActivity(new Intent());
     }
     public void addNewFundraising(View view){
         startActivity(new Intent(inside_cluster_activity.this, create_new_fundraising.class));
+    }
+    private void getData(){
+        if (getIntent().hasExtra("name")&&getIntent().hasExtra("permission")){
+            name=getIntent().getStringExtra("name");
+            permission=getIntent().getStringExtra("permission");
+        }
+    }
+    private void setData(){
+        clusterName.setText(name);
+        clusterRole.setText(clusterRole.getText()+permission);
     }
 }
