@@ -3,6 +3,7 @@ package com.example.demo.serverClasses;
 import org.junit.jupiter.api.Test;
 
 import java.time.Instant;
+import java.util.Calendar;
 import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -17,23 +18,31 @@ class CreditCardTest {
     private final CreditCard card = new CreditCard(cardNumber, cardDate, cardName, cardSurname, cardCvcCode);
 
     @Test
-    void getCardNumber() {
-        assertEquals(card.getCardNumber(), cardNumber);
+    void getAndSetCardNumber() {
+        String cardNumber1 = cardNumber + "1";
+        card.setCardNumber(cardNumber1);
+        assertEquals(card.getCardNumber(), cardNumber1);
     }
 
     @Test
-    void getCardExpire() {
-        assertEquals(card.getCardExpire(), cardDate);
+    void getAndSetCardExpire() {
+        Date cardExpire1 = Date.from(Instant.now());
+        card.setCardExpire(cardExpire1);
+        assertEquals(card.getCardExpire(), cardExpire1);
     }
 
     @Test
-    void getCardHolderName() {
-        assertEquals(card.getCardHolderName(), cardName);
+    void getAndSetCardHolderName() {
+        String cardName1 = cardName + "1";
+        card.setCardHolderName(cardName1);
+        assertEquals(card.getCardHolderName(), cardName1);
     }
 
     @Test
-    void getCardHolderSurname() {
-        assertEquals(card.getCardHolderSurname(), cardSurname);
+    void getAndSetCardHolderSurname() {
+        String cardSurname1 = cardSurname + "1";
+        card.setCardHolderName(cardSurname1);
+        assertEquals(card.getCardHolderName(), cardSurname1);
     }
 
     @Test
