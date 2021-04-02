@@ -26,11 +26,11 @@ public class Const {
     public static final String CONNECTION_CLUSTER_ID = "idCluster";
 
     public static final String CARD_TABLE = "card";
-    public static final String CARD_ID = "idCard";
-    public static final String CARD_HOLDER_NAME = "name";
-    public static final String CARD_HOLDER_SURNAME = "surname";
     public static final String CARD_NUMBER = "cardNumber";
     public static final String CARD_EXPIRE = "expire";
+    public static final String CARD_HOLDER_NAME = "name";
+    public static final String CARD_HOLDER_SURNAME = "surname";
+    public static final String CARD_ID = "idCard";
     public static final String CARD_CVC = "cvc";
 
     public static final String FUNDRAISING_TABLE = "fundraising";

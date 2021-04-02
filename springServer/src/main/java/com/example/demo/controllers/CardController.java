@@ -7,17 +7,15 @@ import com.sun.xml.bind.v2.TODO;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @RestController
 @RequestMapping("card")
 public class CardController{
-    // в силу того, что БД не до конца реализована, я не могу наладить связь с БД,
-    // поэтому написал методы как мог
     DatabaseHandler databaseHandler = new DatabaseHandler();
 
     @GetMapping
@@ -26,16 +24,40 @@ public class CardController{
     }
 
     @PostMapping
-    public CreditCard addNewUserCard(@RequestBody CreditCard creditCard, @RequestBody User user){
+    public CreditCard addNewUserCard(@RequestBody CreditCard creditCard){
         // обработка добавления новой карты в таблицу карт в бд
-        List<CreditCard> creditCards = user.getUserCards();
-        creditCards.add(creditCard);
-        user.addUserCard(creditCard);
-        return creditCard;
+        try {
+            databaseHandler.createCreditCard(creditCard);
+            return creditCard;
+        }
+        catch (Exception e) {
+            return null;
+        }
     }
     @GetMapping("{creditCardNumber}")
-    public CreditCard getUserCardById(@PathVariable String creditCardNumber, @RequestBody User user){
+    public CreditCard getUserCardById(@PathVariable String creditCardNumber/*, @RequestBody User user*/) throws SQLException {
         // получать по номеру карты конкретную карту из бд и возвращать ее
+        CreditCard card = null;
+        ResultSet rs = databaseHandler.getCreditCard(creditCardNumber);
+        int columns = rs.getMetaData().getColumnCount();
+        try {
+            while(rs.next()) {
+                CreditCard card1 = new CreditCard();
+                card1.setCardNumber(rs.getString(1));
+                SimpleDateFormat format = new SimpleDateFormat();
+                Date date = format.parse(rs.getString(2));
+                card1.setCardExpire(date);
+                card1.setCardHolderName(rs.getString(3));
+                card1.setCardHolderName(rs.getString(4));
+                card = card1;
+            }
+            return card;
+        }
+        catch (SQLException | ParseException e) {
+            return card;
+        }
+
+        /*
         CreditCard card = null;
         List<CreditCard> creditCards = user.getUserCards();
         for (int i = 0; i < creditCards.size(); i++){
@@ -46,6 +68,6 @@ public class CardController{
             }
         }
         return card;
+         */
     }
-
 }

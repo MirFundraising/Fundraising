@@ -99,7 +99,7 @@ public class DatabaseHandler extends Configs {
         }
     }
 
-    public ResultSet getCreditCard(CreditCard creditCard) {
+    public ResultSet getCreditCard(String cardNumber) {
         ResultSet rs = null;
 
         String select = "SELECT * FROM " + Const.CARD_TABLE + " WHERE " +
@@ -107,7 +107,7 @@ public class DatabaseHandler extends Configs {
 
         try {
             PreparedStatement preparedStatement = getDbConnection().prepareStatement(select);
-            preparedStatement.setString(1, creditCard.getCardNumber());
+            preparedStatement.setString(1, cardNumber);
             rs = preparedStatement.executeQuery();
         } catch (SQLException | ClassNotFoundException throwables) {
             throwables.printStackTrace();
